@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../icons/logo.svg";
 import "./Header.css";
 
@@ -13,9 +14,9 @@ const Header = () => {
           <div className="links-container">
             <ul className="links">
               <li className="link-item">
-                <a className="link" href="">
+                <Link className="link" to="/">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="link-item">
@@ -72,9 +73,9 @@ const Header = () => {
                   aria-labelledby="navbarScrollingDropdown"
                 >
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link className="dropdown-item" to="/about">
+                      About us
+                    </Link>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
