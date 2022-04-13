@@ -127,6 +127,7 @@ const Landing = () => {
               <br />
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <br />
           </div>
           <div className="row">
             {features.map(feature => (
