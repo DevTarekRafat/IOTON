@@ -38,3 +38,6 @@ span {
   color: var(--light-blue);
   font-family: "Meutas";
 }
+.partner-carousel .kdCslO {
+  display: none;
+}

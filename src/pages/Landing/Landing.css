@@ -1,5 +1,5 @@
 .hero-section {
-  height: 90vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,4 +25,30 @@
 .primary-txt {
   color: #0e314c;
   font-weight: bold;
+}
+.partners-section {
+  margin-bottom: 3rem;
+}
+.partners-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.separator {
+  width: 35%;
+  height: 2px;
+  background: var(--btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.partner-carousel {
+  display: flex;
+  align-items: center;
+}
+.blue-bg-carousel {
+  background: rgba(84, 123, 249, 0.4);
+  padding: 1.5rem;
+  border-radius: 4px;
+  mix-blend-mode: normal;
 }
