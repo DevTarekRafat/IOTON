@@ -116,7 +116,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section className="features">
+      <section className="features-section">
         <div className="container">
           <div className="partners-header">
             <h1>Featured Services We Provide</h1>

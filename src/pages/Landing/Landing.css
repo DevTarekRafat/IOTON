@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
 }
+.hero-content {
+  margin: 1rem 0;
+}
 .hero-content h1 {
   color: var(--dark-blue);
   font-size: var(--h1-font);
@@ -26,8 +29,11 @@
   color: #0e314c;
   font-weight: bold;
 }
+.features-section {
+  margin: 2rem 0;
+}
 .partners-section {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 .partners-header {
   display: flex;
