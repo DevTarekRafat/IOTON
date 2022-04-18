@@ -1,8 +1,12 @@
 .hero-section {
-  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .hero-section {
+    height: 60vh;
+  }
 }
 .hero-content {
   margin: 1rem 0;
@@ -30,7 +34,7 @@
   font-weight: bold;
 }
 .features-section {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 .partners-section {
   margin: 2rem 0;
@@ -53,7 +57,7 @@
   align-items: center;
 }
 .blue-bg-carousel {
-  background: rgba(84, 123, 249, 0.4);
+  background: rgba(240, 247, 253, 0.4);
   padding: 1.5rem;
   border-radius: 4px;
   mix-blend-mode: normal;

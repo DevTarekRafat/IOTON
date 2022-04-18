@@ -38,7 +38,7 @@ const Landing = () => {
     },
     {
       imgSrc: "./imgs/feature4.png",
-      title: "AI and",
+      title: "Computer Vision and AI",
       description:
         "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
       imgName: "feature4",
