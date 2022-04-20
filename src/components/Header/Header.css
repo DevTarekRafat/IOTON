@@ -71,6 +71,7 @@ nav {
   align-items: center;
 }
 .mobile-nav-links {
+  margin-top: 4rem;
   width: 100%;
 }
 .mobile-nav-links ul {

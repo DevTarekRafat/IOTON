@@ -12,6 +12,11 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .fg-between {
   display: flex;
   gap: 0.5rem;
