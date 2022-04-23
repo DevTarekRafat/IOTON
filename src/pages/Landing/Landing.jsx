@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Landing.css";
 import Carousel from "react-elastic-carousel";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
@@ -8,6 +8,12 @@ import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import { ReactComponent as Gitlab } from "../../icons/Gitlab.svg";
 
 const Landing = () => {
+  const [showUp, setShowUp] = useState(false);
+
+  useEffect(() => {
+    console.log("rendered");
+  }, []);
+
   const items = [
     { name: "logo1", src: "./imgs/partner.png" },
     { name: "logo2", src: "./imgs/partner.png" },
@@ -90,6 +96,17 @@ const Landing = () => {
 
   const repeats = [1, 2, 3];
 
+  window.addEventListener("scroll", function () {
+    var element = document.querySelector("#coldRoom");
+    var position = element.getBoundingClientRect();
+
+    // checking whether fully visible
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+      setShowUp(true);
+    } else {
+      setShowUp(false);
+    }
+  });
   return (
     <React.Fragment>
       <section className="landing">
@@ -205,7 +222,10 @@ const Landing = () => {
                 </div>
               </div>
               <div className="col-md-6 col-12">
-                <div className="mb-5">
+                <div
+                  id="coldRoom"
+                  className={`mb-5 ${showUp ? "show-up" : "hide"}`}
+                >
                   <img
                     src="./imgs/cold-room.png"
                     alt=""
