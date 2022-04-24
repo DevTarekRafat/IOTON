@@ -24,10 +24,12 @@
 :root {
   --blue: #4a6f8a;
   --light-blue: #6084a4;
+  --light-blue-bg: rgba(70, 152, 251, 0.2);
   --dark-blue: #0e314c;
   --btn-color: #547bf9;
   --btn-radius: 4px;
   --h1-font: 40px;
+  --card-radius: 20px;
 }
 h1,
 h2,

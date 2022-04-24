@@ -80,17 +80,17 @@ const Landing = () => {
     {
       title: "The Security Risks of Changing Package Owners",
       owner: "Admin",
-      src: "./imgs/card-img.png",
+      src: "./imgs/welcome.png",
     },
     {
       title: "Tips to Protecting Your Business and Family",
       owner: "Smith",
-      src: "./imgs/card-img.png",
+      src: "./imgs/Thermoton.png",
     },
     {
       title: "Protect Your Workplace from Cyber Attacks",
       owner: "John",
-      src: "./imgs/card-img.png",
+      src: "./imgs/computing.png",
     },
   ];
 
@@ -325,24 +325,38 @@ const Landing = () => {
 
       {/* contact-section */}
       <section className="contact-section">
-        <div className="partners-header">
-          <h1>Talk to us about your idea! </h1>
-          <div className="separator"></div>
-        </div>
-        <br />
-        <br />
         <div className="light-blue-bg">
           <div className="container">
-            <div className="contact-content text-center">
-              <h3>
-                To find out more about IOTON, or to discuss how we may be of
-                service to you, please get in touch.
-              </h3>
-              <p>
-                Unlock the potential of pioneering IoT technology for your
-                business.
-              </p>
-              <button className="custom-btn">contact us</button>
+            <div className="row">
+              <div className="col-md-6 col-12">
+                <div>
+                  <img
+                    src="./imgs/idea.png"
+                    alt="idea-img"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div className="col-md-6 col-12">
+                <div className="h-100 f-center">
+                  <div className="contact-content text-center">
+                    <h1>Talk to us about your idea! </h1>
+                    <br />
+                    <h3>
+                      To find out more about IOTON, or to discuss how we may be
+                      of service to you, please get in touch.
+                    </h3>
+                    <p>
+                      Unlock the potential of pioneering IoT technology for your
+                      business.
+                    </p>
+                    <div>
+                      <button className="custom-btn">contact us</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -488,10 +502,10 @@ const Partner = ({ src, name }) => {
 
 const Card = ({ title, owner, src }) => {
   return (
-    <div className="col-md-4 col-12 mb-2">
-      <div className="card">
-        <div>
-          <img className="card-img-top" src={src} alt={title} />
+    <div className="col-lg-4 col-md-6 col-12 mb-2">
+      <div className="blog">
+        <div className="blog-img-container">
+          <img className="img-fluid" src={src} alt={title} />
         </div>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
