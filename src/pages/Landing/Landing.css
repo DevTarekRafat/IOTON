@@ -2,12 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0 2rem 0;
 }
-@media (min-width: 992px) {
-  .hero-section {
-    height: 60vh;
-  }
-}
+
 .hero-content {
   margin: 1rem 0;
 }
@@ -107,6 +104,12 @@
 
 .show-up {
   animation: show-up-anim 0.5s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 1rem 0;
+  }
 }
 
 @keyframes show-up-anim {

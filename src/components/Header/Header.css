@@ -86,7 +86,8 @@ nav {
   .links-container {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    justify-content: space-evenly;
+    flex-grow: 1;
   }
   .burger {
     display: none;
