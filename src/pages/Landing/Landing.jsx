@@ -275,54 +275,6 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* ux */}
-      <section className="ux">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-6 col-12">
-              <div className="partners-header text-center">
-                <h1>We always try to understand users expectation</h1>
-                <div className="separator"></div>
-                <br />
-                <br />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <br />
-          <br />
-          <div className="row">
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>180K</h2>
-                <p>Downloaded</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>20K</h2>
-                <p>Feedback</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>500+</h2>
-                <p>Users</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>70+</h2>
-                <p>Contributors</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* contact-section */}
       <section className="contact-section">
         <div className="light-blue-bg">
