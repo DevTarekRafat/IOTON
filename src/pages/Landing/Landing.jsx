@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Landing.css";
 import Carousel from "react-elastic-carousel";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
@@ -9,10 +9,6 @@ import { ReactComponent as Gitlab } from "../../icons/Gitlab.svg";
 
 const Landing = () => {
   const [showUp, setShowUp] = useState(false);
-
-  useEffect(() => {
-    console.log("rendered");
-  }, []);
 
   const items = [
     { name: "logo1", src: "./imgs/partner.png" },
@@ -94,7 +90,67 @@ const Landing = () => {
     },
   ];
 
-  const repeats = [1, 2, 3];
+  const team = [
+    {
+      name: "Tareq",
+      title: "Founder-Senior Sofware Engineer",
+      src: "./imgs/founder.png",
+      linkedIn: "",
+      preview:
+        "Tareq has passion for developing technology-based solutions that deliver real improvements to business, the environment and quality of life",
+    },
+    {
+      name: "Amaia",
+      title: "Content Manager",
+      src: "./imgs/card-img.png",
+      linkedIn: "",
+      preview:
+        "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
+    },
+    {
+      name: "Matteo",
+      title: "Senior Front-End Developer",
+      src: "./imgs/card-img.png",
+      linkedIn: "",
+      preview:
+        "Cybersecurity Student, passion for IoT systems and security flaws. ",
+    },
+    {
+      name: "Flori",
+      title: "Senior Hardware Engineer",
+      src: "./imgs/hardware-eng.png",
+      linkedIn: "",
+      preview:
+        "Passionate on latest hardware technologies since the age of fourteen.",
+    },
+  ];
+
+  const exploreCards = [
+    {
+      title: "Swarm Operations",
+      src: "./imgs/swarm.png",
+      description:
+        "Ioton have contructed a team of specialists, that are working in a micro-UAV’s technology, to construct 3D shapes in the open-air.",
+    },
+    {
+      title: "Next Generation Ananometer",
+      src: "./imgs/ananometer.png",
+      description:
+        "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
+    },
+    {
+      title: "Smart Traffic Light Control",
+      src: "./imgs/control.png",
+      description:
+        "Managment of modern traffic lights using AI algorithms and Computer Vision.",
+    },
+    {
+      title: "Food Safety CMS",
+      src: "./imgs/food_safety.png",
+      description:
+        "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
+    },
+  ];
 
   window.addEventListener("scroll", function () {
     var element = document.querySelector("#coldRoom");
@@ -275,6 +331,30 @@ const Landing = () => {
         </div>
       </section>
 
+      {/* explore-section */}
+      <section className="explore-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-6 col-12">
+              <div className="partners-header text-center">
+                <h1>Explore Our Use Cases</h1>
+                <div className="separator"></div>
+                <br />
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="row">
+            {exploreCards.map(card => {
+              return <ExploreCard {...card} key={card.title} />;
+            })}
+          </div>
+          <div className="f-center mt-5">
+            <button className="explore-btn">Explore more</button>
+          </div>
+        </div>
+      </section>
+
       {/* contact-section */}
       <section className="contact-section">
         <div className="light-blue-bg">
@@ -413,22 +493,18 @@ const Landing = () => {
           <br />
           <br />
           <div className="row">
-            {repeats.map(item => (
-              <div className="col-md-4 col-12 mb-2" key={item}>
+            {team.map(({ name, src, title, linkedIn, preview }) => (
+              <div className="col-lg-3 col-md-6 col-12 mb-2" key={name}>
                 <div className="card">
-                  <img
-                    src="./imgs/card-img.png"
-                    className="card-img-top"
-                    alt="..."
-                  />
+                  <img src={src} className="card-img-top" alt="..." />
                   <div className="card-body team-card">
-                    <h3>Tareq</h3>
-                    <span>Founder</span>
+                    <h3>{name}</h3>
+                    <span>{title}</span>
                     <div className="card-icons">
-                      <Facebook />
-                      <Twitter />
+                      {/* <Facebook /> */}
+                      {/* <Twitter /> */}
                       <Linkedin />
-                      <Gitlab />
+                      {/* <Gitlab /> */}
                     </div>
                     <p className="text-center">
                       Risus commodo viverra maecenas accumsan lacus vel
@@ -441,9 +517,55 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
+      <section className="signup-section">
+        <div className="light-blue-bg">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4 col-12">
+                <div>
+                  <img
+                    src="./imgs/comparison.png"
+                    alt="welcome-img"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+              <div className="col-md-2 col-12"></div>
+              <div className="col-md-6 col-12">
+                <div className="signup-content">
+                  <div className="partners-header">
+                    <h1>Sign up to our Newsletter</h1>
+                    <div className="separator"></div>
+                    <br />
+                    <p>
+                      We celebrate our successes and look forward to new
+                      opportunities. Collaboration is key challenges and having
+                      fun at the same time, we’re built upon this way.
+                    </p>
+                  </div>
+                  <div className="subscribe-form">
+                    <form>
+                      <div className="input-felid">
+                        <input
+                          placeholder="Email"
+                          className="form-control email-input"
+                          type="email"
+                        />
+                        <button type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </React.Fragment>
   );
 };
+
 const Partner = ({ src, name }) => {
   return (
     <div>
@@ -481,5 +603,20 @@ const Card = ({ title, owner, src }) => {
     </div>
   );
 };
+
+const ExploreCard = ({ title, src, description }) => (
+  <div className="col-md-6 col-12">
+    <div className="explore-card fg-between">
+      <div>
+        <img src={src} alt="" className="img-fluid" />
+      </div>
+      <div>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <span>View Details</span>
+      </div>
+    </div>
+  </div>
+);
 
 export default Landing;
