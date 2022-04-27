@@ -4,3 +4,8 @@ footer {
 footer .footer-link {
   text-decoration: none;
 }
+.social-media {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
