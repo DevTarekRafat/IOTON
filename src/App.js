@@ -7,6 +7,8 @@ import Header from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Privacy from "./pages/Privacy/Privacy";
+import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
       <Footer />
     </BrowserRouter>
