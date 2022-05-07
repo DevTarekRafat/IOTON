@@ -3,6 +3,7 @@ import "./Landing.css";
 import Carousel from "react-elastic-carousel";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
+import Card from "../../components/Card/Card";
 
 export const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -560,35 +561,7 @@ export const Partner = ({ src, name }) => {
   );
 };
 
-const Card = ({ title, owner, src }) => {
-  return (
-    <div className="col-lg-4 col-md-6 col-12 mb-2">
-      <div className="blog">
-        <div className="blog-img-container">
-          <img className="img-fluid" src={src} alt={title} />
-        </div>
-        <div className="card-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">
-            <span className="fw-bold">By </span>
-            <span>{owner}</span>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse.
-          </p>
-          <div className="fg-between">
-            <a href="#" className="read-more-btn">
-              Read More
-            </a>
-            <i className="fa-solid fa-arrow-right"></i>{" "}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+
 
 const ExploreCard = ({ title, src, description }) => (
   <div className="col-md-6 col-12">

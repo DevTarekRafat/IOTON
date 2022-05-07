@@ -115,19 +115,7 @@
   text-decoration: none;
   color: var(--dark-blue);
 }
-.blog {
-  border-radius: var(--card-radius) var(--card-radius) 0 0;
-  padding: 0.5rem;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.blog-img-container {
-  border-radius: var(--card-radius) var(--card-radius) 0 0;
-  background-color: var(--light-blue-bg);
-  overflow: hidden;
-}
+
 .team-section {
   margin: 2rem 0;
 }
