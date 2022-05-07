@@ -33,9 +33,9 @@ const Header = () => {
       <nav>
         <div className="container">
           <div className="f-between">
-            <div id="logo">
+            <Link to="/" id="logo">
               <Logo />
-            </div>
+            </Link>
 
             <div className="links-container">
               <ul className="links">

@@ -15,9 +15,9 @@ export const Footer = () => {
       <div className="container p-4">
         <div className="row">
           <div className="col-lg-5 col-md-12 mb-4 mb-md-0">
-            <div id="logo">
+            <Link to="/" id="logo">
               <Logo />
-            </div>
+            </Link>
             <br />
             <p>
               We create highly-sophisticates software integrated systems through
@@ -76,9 +76,9 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#!" className="footer-link">
+                <Link to="team" className="footer-link">
                   Team
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/contact" className="footer-link">
@@ -127,7 +127,7 @@ export const Footer = () => {
 
       <div className="text-center p-3">
         © 2022 Copyright:
-        <a className="footer-link">IOTON</a>
+        <Link to="/" className="footer-link">IOTON</Link>
       </div>
     </footer>
   );
