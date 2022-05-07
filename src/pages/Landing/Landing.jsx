@@ -7,18 +7,25 @@ import { ReactComponent as Twitter } from "../../icons/Twitter.svg";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import { ReactComponent as Gitlab } from "../../icons/Gitlab.svg";
 
+export const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 3 },
+  { width: 768, itemsToShow: 5 },
+  { width: 1200, itemsToShow: 5 },
+];
+
+export const items = [
+  { name: "logo1", src: "./imgs/partner.png" },
+  { name: "logo2", src: "./imgs/partner.png" },
+  { name: "logo3", src: "./imgs/partner.png" },
+  { name: "logo4", src: "./imgs/partner.png" },
+  { name: "logo5", src: "./imgs/partner.png" },
+  { name: "logo6", src: "./imgs/partner.png" },
+  { name: "logo7", src: "./imgs/partner.png" },
+];
+
 const Landing = () => {
   const [showUp, setShowUp] = useState(false);
-
-  const items = [
-    { name: "logo1", src: "./imgs/partner.png" },
-    { name: "logo2", src: "./imgs/partner.png" },
-    { name: "logo3", src: "./imgs/partner.png" },
-    { name: "logo4", src: "./imgs/partner.png" },
-    { name: "logo5", src: "./imgs/partner.png" },
-    { name: "logo6", src: "./imgs/partner.png" },
-    { name: "logo7", src: "./imgs/partner.png" },
-  ];
 
   const features = [
     {
@@ -63,13 +70,6 @@ const Landing = () => {
         "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
       imgName: "feature6",
     },
-  ];
-
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 3 },
-    { width: 768, itemsToShow: 5 },
-    { width: 1200, itemsToShow: 5 },
   ];
 
   const cards = [
@@ -185,7 +185,9 @@ const Landing = () => {
                     <span className="primary-txt">simplified</span> through
                     customized through modern user friendly dashboard’s.
                   </p>
-                  <button className="custom-btn">explore more</button>
+                  <div>
+                    <button className="custom-btn">explore more</button>
+                  </div>
                 </div>
               </div>
               <div className="col-md-6 col-12">
@@ -566,7 +568,7 @@ const Landing = () => {
   );
 };
 
-const Partner = ({ src, name }) => {
+export const Partner = ({ src, name }) => {
   return (
     <div>
       <img className="img-fluid" src={src} alt={name} />
