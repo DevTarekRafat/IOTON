@@ -13,6 +13,16 @@ nav {
   padding: 0.5rem 1rem;
 }
 
+#solution-dropdown {
+  display: flex;
+}
+#solution-dropdown .solution-li {
+  width: 10rem;
+  padding: 0.25rem 1rem;
+}
+#solution-dropdown .solution-li span {
+  font-size: 12px;
+}
 .link-item .link {
   text-decoration: none;
   color: var(--blue);

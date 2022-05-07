@@ -61,24 +61,29 @@ const Header = () => {
                     className="dropdown-menu"
                     aria-labelledby="navbarScrollingDropdown"
                   >
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
+                    <div id="solution-dropdown">
+                      <li className="solution-li">
+                        <a className="dropdown-item" href="#">
+                          Thermoton
+                        </a>
+                        <span>
+                          Management of cantering industry revolution begins
+                          with us.
+                        </span>
+                      </li>
+                      <li className="solution-li">
+                        <a className="dropdown-item" href="#">
+                          Anemoton
+                        </a>
+                        <span>
+                          Management of cantering industry revolution begins
+                          with us.
+                        </span>
+                      </li>
+                      <li>
+                        <hr className="dropdown-divider" />
+                      </li>
+                    </div>
                   </ul>
                 </li>
 
