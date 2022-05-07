@@ -21,6 +21,41 @@ export const items = [
   { name: "logo7", src: "./imgs/partner.png" },
 ];
 
+export  const team = [
+  {
+    name: "Tareq",
+    title: "Founder-Senior Sofware Engineer",
+    src: "./imgs/founder.png",
+    linkedIn: "",
+    preview:
+      "Tareq has passion for developing technology-based solutions that deliver real improvements to business, the environment and quality of life",
+  },
+  {
+    name: "Amaia",
+    title: "Content Manager",
+    src: "./imgs/card-img.png",
+    linkedIn: "",
+    preview:
+      "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
+  },
+  {
+    name: "Matteo",
+    title: "Senior Front-End Developer",
+    src: "./imgs/card-img.png",
+    linkedIn: "",
+    preview:
+      "Cybersecurity Student, passion for IoT systems and security flaws. ",
+  },
+  {
+    name: "Flori",
+    title: "Senior Hardware Engineer",
+    src: "./imgs/hardware-eng.png",
+    linkedIn: "",
+    preview:
+      "Passionate on latest hardware technologies since the age of fourteen.",
+  },
+];
+
 const Landing = () => {
 
   const features = [
@@ -86,40 +121,7 @@ const Landing = () => {
     },
   ];
 
-  const team = [
-    {
-      name: "Tareq",
-      title: "Founder-Senior Sofware Engineer",
-      src: "./imgs/founder.png",
-      linkedIn: "",
-      preview:
-        "Tareq has passion for developing technology-based solutions that deliver real improvements to business, the environment and quality of life",
-    },
-    {
-      name: "Amaia",
-      title: "Content Manager",
-      src: "./imgs/card-img.png",
-      linkedIn: "",
-      preview:
-        "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    },
-    {
-      name: "Matteo",
-      title: "Senior Front-End Developer",
-      src: "./imgs/card-img.png",
-      linkedIn: "",
-      preview:
-        "Cybersecurity Student, passion for IoT systems and security flaws. ",
-    },
-    {
-      name: "Flori",
-      title: "Senior Hardware Engineer",
-      src: "./imgs/hardware-eng.png",
-      linkedIn: "",
-      preview:
-        "Passionate on latest hardware technologies since the age of fourteen.",
-    },
-  ];
+ 
 
   const exploreCards = [
     {
