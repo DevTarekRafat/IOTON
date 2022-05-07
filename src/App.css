@@ -44,7 +44,11 @@ p,
 span {
   color: var(--light-blue);
   font-family: "Meutas";
+  font-size: 14px;
 }
 .partner-carousel .kdCslO {
   display: none;
+}
+.form-group {
+  margin-bottom: 1rem;
 }

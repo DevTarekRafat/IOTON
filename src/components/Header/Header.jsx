@@ -126,9 +126,9 @@ const Header = () => {
                 </li>
 
                 <li className="link-item">
-                  <a className="link" href="">
+                  <Link className="link" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="group-btn fg-between">
