@@ -7,6 +7,7 @@ import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import { ReactComponent as Instagram } from "../../icons/instagram.svg";
 import { ReactComponent as Location } from "../../icons/location.svg";
 import { ReactComponent as Email } from "../../icons/email.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -32,9 +33,9 @@ export const Footer = () => {
 
             <ul className="list-unstyled mb-0">
               <li>
-                <a href="#!" className="footer-link">
+                <Link to="about" className="footer-link">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#!" className="footer-link">
@@ -65,14 +66,14 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#!" className="footer-link">
+                <Link to="/Privacy"className="footer-link">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#!" className="footer-link">
+                <Link to="/terms-and-conditions" className="footer-link">
                   Terms & Condition
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#!" className="footer-link">
@@ -80,14 +81,9 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#!" className="footer-link">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="footer-link">
+                <Link to="/contact" className="footer-link">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
