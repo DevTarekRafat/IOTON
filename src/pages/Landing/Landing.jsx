@@ -4,6 +4,7 @@ import Carousel from "react-elastic-carousel";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import Card from "../../components/Card/Card";
+import LightHouse from "../../components/LightHouse/LightHouse";
 
 export const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -13,20 +14,20 @@ export const breakPoints = [
 ];
 
 export const items = [
-  { name: "logo1", src: "./imgs/partner.png" },
-  { name: "logo2", src: "./imgs/partner.png" },
-  { name: "logo3", src: "./imgs/partner.png" },
-  { name: "logo4", src: "./imgs/partner.png" },
-  { name: "logo5", src: "./imgs/partner.png" },
-  { name: "logo6", src: "./imgs/partner.png" },
-  { name: "logo7", src: "./imgs/partner.png" },
+  { name: "logo1", src: "imgs/partner.png" },
+  { name: "logo2", src: "imgs/partner.png" },
+  { name: "logo3", src: "imgs/partner.png" },
+  { name: "logo4", src: "imgs/partner.png" },
+  { name: "logo5", src: "imgs/partner.png" },
+  { name: "logo6", src: "imgs/partner.png" },
+  { name: "logo7", src: "imgs/partner.png" },
 ];
 
-export  const team = [
+export const team = [
   {
     name: "Tareq",
     title: "Founder-Senior Sofware Engineer",
-    src: "./imgs/founder.png",
+    src: "imgs/founder.png",
     linkedIn: "",
     preview:
       "Tareq has passion for developing technology-based solutions that deliver real improvements to business, the environment and quality of life",
@@ -34,7 +35,7 @@ export  const team = [
   {
     name: "Amaia",
     title: "Content Manager",
-    src: "./imgs/card-img.png",
+    src: "imgs/card-img.png",
     linkedIn: "",
     preview:
       "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
@@ -42,7 +43,7 @@ export  const team = [
   {
     name: "Matteo",
     title: "Senior Front-End Developer",
-    src: "./imgs/card-img.png",
+    src: "imgs/card-img.png",
     linkedIn: "",
     preview:
       "Cybersecurity Student, passion for IoT systems and security flaws. ",
@@ -50,7 +51,7 @@ export  const team = [
   {
     name: "Flori",
     title: "Senior Hardware Engineer",
-    src: "./imgs/hardware-eng.png",
+    src: "imgs/hardware-eng.png",
     linkedIn: "",
     preview:
       "Passionate on latest hardware technologies since the age of fourteen.",
@@ -58,94 +59,136 @@ export  const team = [
 ];
 
 const Landing = () => {
+  const [emailInput, setEmailInput] = useState({ email: "", error: "" });
+
+  const onChangeHandler = e => {
+    setEmailInput({ email: e.target.value });
+  };
+
+  // emailValidation
+  const emailValidation = () => {
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    if (!emailInput.email || regex.test(emailInput.email) === false) {
+      setEmailInput({
+        ...emailInput,
+        error: "Email is not valid",
+      });
+      return false;
+    }
+    return true;
+  };
+
+  // submitSubscription
+  const submitSubscription = e => {
+    e.preventDefault();
+    if (emailValidation()) {
+      //send request
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: emailInput.email,
+          is_subscribed_to_newsletter: true,
+        }),
+      };
+
+      fetch("https://api.ioton.io/api/v1/subscribers/", requestOptions)
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          console.error(err);
+        });
+      setEmailInput({ email: "", error: "" });
+    }
+  };
 
   const features = [
     {
-      imgSrc: "./imgs/feature1.png",
+      imgSrc: "imgs/feature1.png",
       title: "Software Development",
       description:
-        "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "Coding apps and websites.Bringing your ideas to life through smart software development.",
       imgName: "feature1",
     },
     {
-      imgSrc: "./imgs/feature2.png",
+      imgSrc: "imgs/feature2.png",
       title: "Smart Home, Office",
       description:
-        "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "Convenient home set up, offering smart devices that can be automatically controlled remotely.",
       imgName: "feature2",
     },
     {
-      imgSrc: "./imgs/feature3.png",
+      imgSrc: "imgs/feature3.png",
       title: "Smart City",
       description:
-        "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "Using information and communication technology to imporve operational efficiency, and provide better quality of services and welfare.",
       imgName: "feature3",
     },
     {
-      imgSrc: "./imgs/feature4.png",
+      imgSrc: "imgs/feature4.png",
       title: "Computer Vision and AI",
       description:
-        "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "Allowing computers and systems to draw information from digital images, videos, and visual inputs therefore making suggestions based on the collected information.",
       imgName: "feature4",
     },
     {
-      imgSrc: "./imgs/feature5.png",
+      imgSrc: "imgs/feature5.png",
       title: "Industrial",
       description:
         "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
       imgName: "feature5",
     },
     {
-      imgSrc: "./imgs/feature6.png",
+      imgSrc: "imgs/feature6.png",
       title: "System on Chip",
       description:
-        "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "Lowering energy waste, saving on spending cost and reducing space, SoC integrates entire electronic and computer systems.",
       imgName: "feature6",
     },
   ];
 
   const cards = [
     {
-      title: "The Security Risks of Changing Package Owners",
-      owner: "Admin",
-      src: "./imgs/welcome.png",
+      title: "Welcome To IOTON",
+      owner: "Amaia",
+      src: "imgs/welcome.png",
     },
     {
-      title: "Tips to Protecting Your Business and Family",
-      owner: "Smith",
-      src: "./imgs/Thermoton.png",
+      title: "What is the Internet of things?",
+      owner: "Amaia",
+      src: "imgs/Thermoton.png",
     },
     {
-      title: "Protect Your Workplace from Cyber Attacks",
-      owner: "John",
-      src: "./imgs/computing.png",
+      title: "The Importamce of IOT in industry",
+      owner: "Amaia",
+      src: "imgs/computing.png",
     },
   ];
-
- 
 
   const exploreCards = [
     {
       title: "Swarm Operations",
-      src: "./imgs/swarm.png",
+      src: "imgs/swarm.png",
       description:
         "Ioton have contructed a team of specialists, that are working in a micro-UAV’s technology, to construct 3D shapes in the open-air.",
     },
     {
       title: "Next Generation Ananometer",
-      src: "./imgs/ananometer.png",
+      src: "imgs/ananometer.png",
       description:
         "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
     },
     {
       title: "Smart Traffic Light Control",
-      src: "./imgs/control.png",
+      src: "imgs/control.png",
       description:
         "Managment of modern traffic lights using AI algorithms and Computer Vision.",
     },
     {
       title: "Food Safety CMS",
-      src: "./imgs/food_safety.png",
+      src: "imgs/food_safety.png",
       description:
         "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
     },
@@ -214,11 +257,7 @@ const Landing = () => {
             <h1>Featured Services We Provide</h1>
             <div className="separator" style={{ width: "45%" }}></div>
             <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
-              <br />
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <p>We offer a wide variety of products and services,</p>
             <br />
           </div>
           <br />
@@ -269,21 +308,13 @@ const Landing = () => {
               </div>
               <div className="col-md-6 col-12">
                 <div id="coldRoom" className="mb-5 ">
-                  <img
-                    src="./imgs/cold-room.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <img src="imgs/cold-room.png" alt="" className="img-fluid" />
                 </div>
               </div>
 
               <div className="col-md-6 col-12">
                 <div className="mb-5">
-                  <img
-                    src="./imgs/Thermoton.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <img src="imgs/Thermoton.png" alt="" className="img-fluid" />
                 </div>
               </div>
 
@@ -327,6 +358,8 @@ const Landing = () => {
                 <h1>Explore Our Use Cases</h1>
                 <div className="separator"></div>
                 <br />
+                <LightHouse />
+                {/* <span className="text-center text">COMING SOON</span> */}
               </div>
             </div>
           </div>
@@ -350,7 +383,7 @@ const Landing = () => {
               <div className="col-md-6 col-12">
                 <div>
                   <img
-                    src="./imgs/idea.png"
+                    src="imgs/idea.png"
                     alt="idea-img"
                     className="img-fluid"
                   />
@@ -433,7 +466,7 @@ const Landing = () => {
             </div>
             <div className="col-md-6 col-12">
               <div className="f-end mb-5">
-                <img src="./imgs/comparison.png" alt="" className="img-fluid" />
+                <img src="imgs/comparison.png" alt="" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -445,12 +478,12 @@ const Landing = () => {
         <div className="light-blue-bg">
           <div className="container">
             <div className="partners-header">
-              <h1>The News from Our Blog</h1>
+              <h1>Discover More</h1>
               <div className="separator"></div>
               <br />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Follow our blog to find out more about the lastest updates in
+                the industry, IoT’s and all things related to IOTON.
               </p>
             </div>
             <br />
@@ -512,7 +545,7 @@ const Landing = () => {
               <div className="col-md-4 col-12">
                 <div>
                   <img
-                    src="./imgs/comparison.png"
+                    src="imgs/comparison.png"
                     alt="welcome-img"
                     className="img-fluid"
                   />
@@ -537,10 +570,15 @@ const Landing = () => {
                         <input
                           placeholder="Email"
                           className="form-control email-input"
-                          type="email"
+                          name="email"
+                          value={emailInput.email}
+                          onChange={onChangeHandler}
                         />
-                        <button type="submit">Subscribe</button>
+                        <button type="submit" onClick={submitSubscription}>
+                          Subscribe
+                        </button>
                       </div>
+                      <span className="text-danger">{emailInput.error}</span>
                     </form>
                   </div>
                 </div>
@@ -560,8 +598,6 @@ export const Partner = ({ src, name }) => {
     </div>
   );
 };
-
-
 
 const ExploreCard = ({ title, src, description }) => (
   <div className="col-md-6 col-12">
