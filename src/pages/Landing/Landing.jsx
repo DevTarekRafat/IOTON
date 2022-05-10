@@ -154,16 +154,19 @@ const Landing = () => {
       title: "Welcome To IOTON",
       owner: "Amaia",
       src: "imgs/welcome.png",
+      params: "welcome",
     },
     {
       title: "What is the Internet of things?",
       owner: "Amaia",
       src: "imgs/Thermoton.png",
+      params: "Thermoton",
     },
     {
       title: "The Importamce of IOT in industry",
       owner: "Amaia",
       src: "imgs/computing.png",
+      params: "computing",
     },
   ];
 
@@ -359,7 +362,6 @@ const Landing = () => {
                 <div className="separator"></div>
                 <br />
                 <LightHouse />
-                {/* <span className="text-center text">COMING SOON</span> */}
               </div>
             </div>
           </div>

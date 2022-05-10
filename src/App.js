@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Privacy from "./pages/Privacy/Privacy";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import Team from "./pages/Team/Team";
+import BlogDetails from "./pages/BlogDetails/BlogDetails";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/blogs/:src" element={<BlogDetails/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
