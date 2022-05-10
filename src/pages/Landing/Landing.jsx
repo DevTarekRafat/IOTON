@@ -58,6 +58,55 @@ export const team = [
   },
 ];
 
+export const cards = [
+  {
+    title: "Welcome To IOTON",
+    owner: "Amaia",
+    src: "imgs/welcome.png",
+    params: "welcome",
+    summary:
+      'IoT, also known as internet of things, is the connectivity of computing devices incorporated in ordinary things through the Internet so that they may transmit and receive data. IoT is nothing more than a vast network of interconnected "things." "Things" refers to one-of-a-kind devices that communicate with one another over wireless and or cellular networks. Everything from your toothbrush to your phone to your lawnmower can be connected. The Internet of Things (IoT) may be used in every industry and it is allowing us to live smarter lives. These devices, also known as cyber-physical computing, connect two worlds by collecting and transmitting data via the internet and contributing to the huge world of data.',
+    details: [
+      {
+        title: "How do IoT technologies work? ",
+        description:
+          "When we can't be there physically, IoT devices can act as our eyes and ears. Sensors on devices record data that we see, hear, or feel. They then provide the information as directed, and we evaluate it to inform and automate our subsequent actions or judgments. IoT devices collect data from their surroundings via sensors. This might be anything as the temperature or a real-time video stream. Then, employing active networks, IoT devices make this data available via a public or private cloud as requested. At this stage, software is written to do an action depending on the data, such as turning on a fan or sending a warning. This accumulation of data is analysed, providing important insights that may be used to guide confident actions and product choices.",
+      },
+      {
+        title: "Evolution of IoT",
+        description: `IoT devices generated roughly 18 zettabytes of data in 2019, and the IDC predicts that figure to more than triple to over 73 zettabytes – which is equal to 73 trillion gigabytes – by 2025. Although we can't truly define digital data in physical terms, we can claim that if all of that data was transformed into 1990s discs and spread out end to end, it could travel to the moon and back over 5000 times. A precise combination of technologies required to come together and progress concurrently for IoT to evolve.
+
+        This massive increase in IoT data volume could not have occurred without adequate Internet and cloud connection to deliver and receive it. Many IoT devices now rely on a local Wi-Fi network to send sophisticated and large amounts of data. However, as 5G and other cellular networks develop, a recent McKinsey report discusses the implications and how it may untether IoT devices from Wi-Fi networks.
+        
+        With the consistent growth in demand for IoT sensor innovation, the market transitioned from a few expensive, specialist providers to a highly globalised and price-competitive sensor manufacturing business. Since 2004, the average price of IoT sensors has reduced by more than 70%, supported by a demand-driven increase in product capability and diversity.
+        
+        Since the beginning of digital storage, there will be twice as much data generated in the next five years. Modern organisations require ever-increasing quantities of memory and computing capacity to use and harness all of that data. The race to do this has been quick, driving IoT's increasing significance and application.
+        
+        These technologies enable organisations to not only manage and handle massive volumes of IoT data, but also to analyse and learn from it. Big Data is AI and machine learning's favourite, therefore, the greater the size and diversity of the data sets, the more robust and accurate the insights and intelligence that AI-powered advanced analytics can provide. The proliferation of IoT devices has expanded in lockstep with the growth of artificial intelligence and its thirst for  data it generates.
+        `,
+      },
+    ],
+    detailedDescription: [
+      {
+        description: "description",
+        imgSrc: "imgSrc",
+      },
+    ],
+  },
+  {
+    title: "What is the Internet of things?",
+    owner: "Amaia",
+    src: "imgs/Thermoton.png",
+    params: "Thermoton",
+  },
+  {
+    title: "The Importamce of IOT in industry",
+    owner: "Amaia",
+    src: "imgs/computing.png",
+    params: "computing",
+  },
+];
+
 const Landing = () => {
   const [emailInput, setEmailInput] = useState({ email: "", error: "" });
 
@@ -146,27 +195,6 @@ const Landing = () => {
       description:
         "Lowering energy waste, saving on spending cost and reducing space, SoC integrates entire electronic and computer systems.",
       imgName: "feature6",
-    },
-  ];
-
-  const cards = [
-    {
-      title: "Welcome To IOTON",
-      owner: "Amaia",
-      src: "imgs/welcome.png",
-      params: "welcome",
-    },
-    {
-      title: "What is the Internet of things?",
-      owner: "Amaia",
-      src: "imgs/Thermoton.png",
-      params: "Thermoton",
-    },
-    {
-      title: "The Importamce of IOT in industry",
-      owner: "Amaia",
-      src: "imgs/computing.png",
-      params: "computing",
     },
   ];
 

@@ -18,6 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route index  element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/privacy" element={<Privacy />} />
