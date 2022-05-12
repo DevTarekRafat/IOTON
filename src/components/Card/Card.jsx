@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-const Card = ({ title, owner, src,params }) => {
+const Card = ({ title, owner, src, params }) => {
   return (
     <div className="col-lg-4 col-md-6 col-12 mb-2">
       <div className="blog">
@@ -27,7 +27,7 @@ const Card = ({ title, owner, src,params }) => {
             <Link to={`/blogs/${params}`} className="read-more-btn">
               Read More
             </Link>
-            <i className="fa-solid fa-arrow-right"></i>{" "}
+            <i className="fa-solid fa-arrow-right"></i>
           </div>
         </div>
       </div>
