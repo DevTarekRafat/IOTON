@@ -48,7 +48,7 @@ const BlogDetails = () => {
               </div>
               <div className="col-md-6">
                 <div className="f-end">
-                  <img src={item.imgSrc} alt="" />
+                  <img src={item.imgSrc} alt="img" />
                 </div>
               </div>
             </div>

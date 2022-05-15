@@ -323,15 +323,15 @@ const Landing = () => {
           <br />
           <br />
           <div className="partner-carousel">
-          <Swiper
+            <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
               slidesPerView={4}
-              navigation
               onSwiper={swiper => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
-              loop
               breakpoints={breakPoints}
+              navigation
+              loop
             >
               {items.map(item => (
                 <SwiperSlide>
