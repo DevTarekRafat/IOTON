@@ -1,7 +1,8 @@
 import React from "react";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
-import {  items, Partner } from "../Landing/Landing";
-// import Carousel from "react-elastic-carousel";
+import { breakPoints, items, Partner } from "../Landing/Landing";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 
 const About = () => {
   const team = [
@@ -208,11 +209,22 @@ const About = () => {
           <br />
           <br />
           <div className="partner-carousel">
-            {/* <Carousel breakPoints={breakPoints} className="blue-bg-carousel">
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={10}
+              slidesPerView={4}
+              navigation
+              onSwiper={swiper => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+              loop
+              breakpoints={breakPoints}
+            >
               {items.map(item => (
-                <Partner key={item.name} name={item.name} src={item.src} />
+                <SwiperSlide>
+                  <Partner key={item.name} name={item.name} src={item.src} />
+                </SwiperSlide>
               ))}
-            </Carousel> */}
+            </Swiper>
           </div>
         </div>
       </section>

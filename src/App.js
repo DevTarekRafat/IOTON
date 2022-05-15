@@ -12,6 +12,12 @@ import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import Team from "./pages/Team/Team";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function App() {
   return (
     <BrowserRouter>
