@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Landing.css";
-// import Carousel from "react-elastic-carousel";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import Card from "../../components/Card/Card";
 import LightHouse from "../../components/LightHouse/LightHouse";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { TweenMax } from "gsap/gsap-core";
+import gsap from "gsap";
 
 export const breakPoints = [
   { width: 550, itemsToShow: 2 },
@@ -159,7 +160,12 @@ export const cards = [
 ];
 
 const Landing = () => {
+  let heroSection = useRef(null);
   const [emailInput, setEmailInput] = useState({ email: "", error: "" });
+
+  useEffect(() => {
+    gsap.fromTo(heroSection,{opacity: 0,y:100}, {opacity: 1,y:0, duration: 1.5})
+  }, []);
 
   const onChangeHandler = e => {
     setEmailInput({ email: e.target.value });
@@ -279,11 +285,11 @@ const Landing = () => {
   return (
     <React.Fragment>
       <section className="landing">
-        <section className="hero-section">
+        <section className="hero-section" >
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">
-                <div className="hero-content">
+                <div className="hero-content" ref={ref => (heroSection = ref)}>
                   <span className="internet-txt">Internet of Things</span>
                   <h1>
                     Save, Advance,
@@ -327,15 +333,13 @@ const Landing = () => {
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
               slidesPerView={4}
-              onSwiper={swiper => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
               breakpoints={breakPoints}
               navigation
               loop
             >
               {items.map(item => (
-                <SwiperSlide>
-                  <Partner key={item.name} name={item.name} src={item.src} />
+                <SwiperSlide key={item.name}>
+                  <Partner  name={item.name} src={item.src} />
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -214,14 +214,12 @@ const About = () => {
               spaceBetween={10}
               slidesPerView={4}
               navigation
-              onSwiper={swiper => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
               loop
               breakpoints={breakPoints}
             >
               {items.map(item => (
-                <SwiperSlide>
-                  <Partner key={item.name} name={item.name} src={item.src} />
+                <SwiperSlide key={item.name} >
+                  <Partner name={item.name} src={item.src} />
                 </SwiperSlide>
               ))}
             </Swiper>
