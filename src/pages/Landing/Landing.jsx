@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "./Landing.css";
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import Card from "../../components/Card/Card";
 import LightHouse from "../../components/LightHouse/LightHouse";
 
-export const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 3 },
-  { width: 768, itemsToShow: 5 },
-  { width: 1200, itemsToShow: 5 },
-];
+// export const breakPoints = [
+//   { width: 1, itemsToShow: 1 },
+//   { width: 550, itemsToShow: 3 },
+//   { width: 768, itemsToShow: 5 },
+//   { width: 1200, itemsToShow: 5 },
+// ];
 
 export const items = [
   { name: "logo1", src: "imgs/partner.png" },
@@ -322,11 +322,11 @@ const Landing = () => {
           <br />
           <br />
           <div className="partner-carousel">
-            <Carousel breakPoints={breakPoints} className="blue-bg-carousel">
+            {/* <Carousel breakPoints={breakPoints} className="blue-bg-carousel">
               {items.map(item => (
                 <Partner key={item.name} name={item.name} src={item.src} />
               ))}
-            </Carousel>
+            </Carousel> */}
           </div>
         </div>
       </section>

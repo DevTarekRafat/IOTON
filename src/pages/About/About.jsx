@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
-import { breakPoints, items, Partner } from "../Landing/Landing";
-import Carousel from "react-elastic-carousel";
+import {  items, Partner } from "../Landing/Landing";
+// import Carousel from "react-elastic-carousel";
 
 const About = () => {
   const team = [
@@ -208,11 +208,11 @@ const About = () => {
           <br />
           <br />
           <div className="partner-carousel">
-            <Carousel breakPoints={breakPoints} className="blue-bg-carousel">
+            {/* <Carousel breakPoints={breakPoints} className="blue-bg-carousel">
               {items.map(item => (
                 <Partner key={item.name} name={item.name} src={item.src} />
               ))}
-            </Carousel>
+            </Carousel> */}
           </div>
         </div>
       </section>
