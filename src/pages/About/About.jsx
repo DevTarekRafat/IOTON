@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import { breakPoints, items, Partner } from "../Landing/Landing";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -218,7 +218,7 @@ const About = () => {
               breakpoints={breakPoints}
             >
               {items.map(item => (
-                <SwiperSlide key={item.name} >
+                <SwiperSlide key={item.name}>
                   <Partner name={item.name} src={item.src} />
                 </SwiperSlide>
               ))}

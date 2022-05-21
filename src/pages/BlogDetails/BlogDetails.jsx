@@ -14,18 +14,22 @@ const BlogDetails = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6">
-          <div className="f-center h-100">
-            {blogDetails?.summary && <p>{blogDetails.summary}</p>}
+    <div className="pt-3 pb-3">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="f-center flex-column align-items-start h-100">
+              {blogDetails?.title && <h2>{blogDetails.title}</h2>}
+              {blogDetails?.summary && <p>{blogDetails.summary}</p>}
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="f-end">
+              <img src={`./imgs/${src}.png`} className="img-fluid" alt="img" />
+            </div>
           </div>
         </div>
-        <div className="col-md-6">
-          <div className="f-end">
-            <img src={`./imgs/${src}.png`} className="img-fluid" alt="img" />
-          </div>
-        </div>
+
         {blogDetails?.details &&
           blogDetails?.details.map(details => (
             <div className="row" key={details.title}>
@@ -48,7 +52,7 @@ const BlogDetails = () => {
               </div>
               <div className="col-md-6">
                 <div className="f-end">
-                  <img src={item.imgSrc} alt="img" />
+                  <img src={item.imgSrc} alt="img" className="img-fluid" />
                 </div>
               </div>
             </div>
