@@ -6,8 +6,8 @@ import Card from "../../components/Card/Card";
 import LightHouse from "../../components/LightHouse/LightHouse";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { TweenMax } from "gsap/gsap-core";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export const breakPoints = [
   { width: 550, itemsToShow: 2 },
@@ -159,12 +159,50 @@ export const cards = [
   },
 ];
 
+const animSection = selector => {
+  gsap.fromTo(
+    selector,
+    { opacity: 0, y: 100 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: selector,
+        toggleActions: "restart none restart none",
+      },
+    }
+  );
+};
+
 const Landing = () => {
   let heroSection = useRef(null);
+  let featuresSection = useRef(null);
+  let cmsSection = useRef(null);
+  let exploreSection = useRef(null);
+  let contactSection = useRef(null);
+  let comparisonSection = useRef(null);
+  let blogsSection = useRef(null);
+  let teamSection = useRef(null);
+  let signupSection = useRef(null);
   const [emailInput, setEmailInput] = useState({ email: "", error: "" });
 
   useEffect(() => {
-    gsap.fromTo(heroSection,{opacity: 0,y:100}, {opacity: 1,y:0, duration: 1.5})
+    gsap.registerPlugin(ScrollTrigger);
+    const sections = [
+      heroSection,
+      featuresSection,
+      cmsSection,
+      exploreSection,
+      contactSection,
+      comparisonSection,
+      blogsSection,
+      teamSection,
+      signupSection,
+    ];
+    sections.map(sec => {
+      animSection(sec);
+    });
   }, []);
 
   const onChangeHandler = e => {
@@ -284,12 +322,12 @@ const Landing = () => {
 
   return (
     <React.Fragment>
-      <section className="landing">
-        <section className="hero-section" >
+      <section className="landing" ref={ref => (heroSection = ref)}>
+        <section className="hero-section">
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">
-                <div className="hero-content" ref={ref => (heroSection = ref)}>
+                <div className="hero-content">
                   <span className="internet-txt">Internet of Things</span>
                   <h1>
                     Save, Advance,
@@ -339,7 +377,7 @@ const Landing = () => {
             >
               {items.map(item => (
                 <SwiperSlide key={item.name}>
-                  <Partner  name={item.name} src={item.src} />
+                  <Partner name={item.name} src={item.src} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -348,7 +386,10 @@ const Landing = () => {
       </section>
 
       {/* features-section */}
-      <section className="features-section">
+      <section
+        className="features-section"
+        ref={ref => (featuresSection = ref)}
+      >
         <div className="container">
           <div className="partners-header">
             <h1>Featured Services We Provide</h1>
@@ -368,7 +409,7 @@ const Landing = () => {
       </section>
 
       {/* cms-section */}
-      <section className="cms-section">
+      <section className="cms-section" ref={ref => (cmsSection = ref)}>
         <div className="partners-header">
           <h1>Our powerful CMS</h1>
           <div className="separator"></div>
@@ -447,7 +488,7 @@ const Landing = () => {
       </section>
 
       {/* explore-section */}
-      <section className="explore-section">
+      <section className="explore-section" ref={ref => (exploreSection = ref)}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 col-12">
@@ -472,7 +513,7 @@ const Landing = () => {
       </section>
 
       {/* contact-section */}
-      <section className="contact-section">
+      <section className="contact-section" ref={ref => (contactSection = ref)}>
         <div className="light-blue-bg">
           <div className="container">
             <div className="row">
@@ -511,7 +552,10 @@ const Landing = () => {
       </section>
 
       {/* comparison-section */}
-      <section className="comparison-section">
+      <section
+        className="comparison-section"
+        ref={ref => (comparisonSection = ref)}
+      >
         <div className="partners-header">
           <h1>Why We Are Best From Others</h1>
           <div className="separator"></div>
@@ -570,7 +614,7 @@ const Landing = () => {
       </section>
 
       {/* blogs */}
-      <section className="blogs">
+      <section className="blogs" ref={ref => (blogsSection = ref)}>
         <div className="light-blue-bg">
           <div className="container">
             <div className="partners-header">
@@ -594,7 +638,7 @@ const Landing = () => {
       </section>
 
       {/* team-section */}
-      <section className="team-section">
+      <section className="team-section" ref={ref => (teamSection = ref)}>
         <div className="container">
           <div className="partners-header">
             <h1>Our Awesome Team</h1>
@@ -634,7 +678,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <section className="signup-section">
+      <section className="signup-section" ref={ref => (signupSection = ref)}>
         <div className="light-blue-bg">
           <div className="container">
             <div className="row">
@@ -696,13 +740,13 @@ export const Partner = ({ src, name }) => {
 };
 
 const ExploreCard = ({ title, src, description }) => (
-  <div className="col-md-6 col-12">
-    <div className="explore-card fg-between">
+  <div className="col-md-6 col-12 mb-3">
+    <div className="explore-card fg-between h-100">
       <div>
         <img src={src} alt="" className="img-fluid" />
       </div>
       <div>
-        <h2>{title}</h2>
+        <h5>{title}</h5>
         <p>{description}</p>
         <span>View Details</span>
       </div>
