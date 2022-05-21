@@ -159,7 +159,7 @@ export const cards = [
   },
 ];
 
-const animSection = selector => {
+export const animSection = selector => {
   gsap.fromTo(
     selector,
     { opacity: 0, y: 100 },

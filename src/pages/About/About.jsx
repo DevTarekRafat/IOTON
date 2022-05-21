@@ -1,10 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
-import { breakPoints, items, Partner } from "../Landing/Landing";
+import { animSection, breakPoints, items, Partner } from "../Landing/Landing";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const About = () => {
+  let heroSection = useRef(null);
+  let teamSection = useRef(null);
+  let uxSection = useRef(null);
+  let contactSection = useRef(null);
+  let partnersSection = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    animSection(heroSection);
+    animSection(teamSection);
+    animSection(uxSection);
+    animSection(contactSection);
+    animSection(partnersSection);
+  }, []);
+
   const team = [
     {
       name: "Tareq",
@@ -43,7 +60,7 @@ const About = () => {
   return (
     <>
       <section className="landing">
-        <section className="hero-section">
+        <section className="hero-section" ref={ref => (heroSection = ref)}>
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">
@@ -75,7 +92,10 @@ const About = () => {
         </section>
       </section>
 
-      <section className="team-section light-blue-bg">
+      <section
+        className="team-section light-blue-bg"
+        ref={ref => (teamSection = ref)}
+      >
         <div className="container">
           <div className="partners-header">
             <h1>Our Awesome Team</h1>
@@ -113,7 +133,7 @@ const About = () => {
       </section>
 
       {/* ux */}
-      <section className="ux">
+      <section className="ux" ref={ref => (uxSection = ref)}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 col-12">
@@ -161,7 +181,7 @@ const About = () => {
       </section>
 
       {/* contact-section */}
-      <section className="contact-section">
+      <section className="contact-section" ref={ref => (contactSection = ref)}>
         <div className="light-blue-bg">
           <div className="container">
             <div className="row">
@@ -200,7 +220,10 @@ const About = () => {
       </section>
 
       {/* partners-section */}
-      <section className="partners-section">
+      <section
+        className="partners-section"
+        ref={ref => (partnersSection = ref)}
+      >
         <div className="container">
           <div className="partners-header">
             <h1>Our Partners</h1>
