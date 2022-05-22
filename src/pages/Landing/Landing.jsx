@@ -358,10 +358,10 @@ const Landing = () => {
       </section>
 
       {/* partners-section */}
-      <section className="partners-section">
+      {/* <section className="partners-section">
         <div className="container">
           <div className="partners-header">
-            <h1>Our Partners</h1>
+            <h2>Our Partners</h2>
             <div className="separator"></div>
           </div>
           <br />
@@ -383,7 +383,7 @@ const Landing = () => {
             </Swiper>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* features-section */}
       <section
@@ -391,19 +391,20 @@ const Landing = () => {
         ref={ref => (featuresSection = ref)}
       >
         <div className="container">
-          <div className="partners-header">
-            <h1>Featured Services We Provide</h1>
-            <div className="separator" style={{ width: "45%" }}></div>
+          <div className="features-content">
+            <div className="partners-header">
+              <h2>Featured Services We Provide</h2>
+              <p>We offer a wide variety of products and services,</p>
+              <div className="separator" style={{ width: "20%" }}></div>
+              <br />
+            </div>
             <br />
-            <p>We offer a wide variety of products and services,</p>
-            <br />
-          </div>
-          <br />
 
-          <div className="row">
-            {features.map(feature => (
-              <FeatureItem {...feature} key={feature.imgName} />
-            ))}
+            <div className="row">
+              {features.map(feature => (
+                <FeatureItem {...feature} key={feature.imgName} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

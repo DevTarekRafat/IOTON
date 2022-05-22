@@ -23,9 +23,11 @@
 }
 :root {
   --blue: #4a6f8a;
-  --light-blue: #6084a4;
+  --light-blue: #D6E8FE;
   --light-blue-bg: rgba(70, 152, 251, 0.2);
   --dark-blue: #0e314c;
+  --gray:#5D616F;
+  --black:#05060A;
   --btn-color: #547bf9;
   --btn-radius: 4px;
   --h1-font: 40px;
@@ -37,12 +39,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-blue);
+  color: var(--black);
   font-family: "Meutas";
 }
 p,
+a,
 span {
-  color: var(--light-blue);
+  color: var(--gray) !important;
   font-family: "Meutas";
   font-size: 14px;
 }
@@ -51,4 +54,7 @@ span {
 }
 .form-group {
   margin-bottom: 1rem;
+}
+.pointer{
+  cursor: pointer;
 }

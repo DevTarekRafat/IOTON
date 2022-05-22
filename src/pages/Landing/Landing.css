@@ -3,7 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0 2rem 0;
+  padding: 4rem 0 2rem 0;
+  background-image: url(./hero.png);
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
 }
 
 .hero-content {
@@ -36,7 +40,13 @@
   font-weight: bold;
 }
 .features-section {
-  margin: 4rem 0;
+  background-color: #FBFEFF;
+  padding: 2.5rem 0;
+}
+.features-content{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
 }
 .partners-section {
   margin: 2rem 0;
@@ -50,10 +60,8 @@
 .separator {
   width: 35%;
   height: 2px;
-  background: var(--btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-}
+  background: #3C546C;
+  border-radius: 29.3631px;}
 .partner-carousel {
   display: flex;
   align-items: center;
