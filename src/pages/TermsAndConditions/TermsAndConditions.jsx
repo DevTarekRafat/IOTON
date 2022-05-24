@@ -2,7 +2,6 @@ import React from "react";
 import { termsAndConditionsList } from "./listText";
 
 const TermsAndConditions = () => {
-
   return (
     <section className="terms-and-conditions-section">
       <div className="text-center pb-3">
@@ -10,7 +9,7 @@ const TermsAndConditions = () => {
         <h1>Term’s and Conditions</h1>
         <br />
       </div>
-      <div className="light-blue-bg">
+      <div className="light-blue-bg pt-3 pb-3">
         <div className="container">
           <ol>
             {termsAndConditionsList.map(list => (

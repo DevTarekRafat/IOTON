@@ -1,5 +1,4 @@
 .hero-section {
-  /* visibility: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,17 +18,15 @@
 .hero-content h1 {
   color: var(--dark-blue);
   font-size: var(--h1-font);
-  /* text-shadow: 0px 4px 4px var(--btn-color); */
 }
 .custom-btn {
   padding: 0.5rem 1.5rem;
   margin-top: 1rem;
   color: white;
   border: none;
-  text-transform: uppercase;
   background: var(--btn-color);
   box-shadow: 0px 13px 27px var(--btn-color);
-  border-radius: 4px;
+  border-radius: 40px;
 }
 
 .internet-txt {
@@ -40,10 +37,10 @@
   font-weight: bold;
 }
 .features-section {
-  background-color: #FBFEFF;
+  background-color: #fbfeff;
   padding: 2.5rem 0;
 }
-.features-content{
+.features-content {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
@@ -60,8 +57,9 @@
 .separator {
   width: 35%;
   height: 2px;
-  background: #3C546C;
-  border-radius: 29.3631px;}
+  background: #3c546c;
+  border-radius: 29.3631px;
+}
 .partner-carousel {
   display: flex;
   align-items: center;
@@ -76,21 +74,14 @@
   margin: 2rem 0;
 }
 .light-blue-bg {
-  padding: 2rem 0;
   background-color: var(--light-blue-bg);
 }
 
 .explore-card {
   padding: 1rem;
-  background: radial-gradient(
-      99.5% 621.87% at 99.5% 1%,
-      #ffffff 0%,
-      rgba(70, 152, 251, 0.6) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  border: 0.5px solid #547bf9;
+  background: #e0effe;
+  border: 0.5px solid #3c546c;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   margin-bottom: 1rem;
 }
@@ -107,9 +98,40 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 1rem 0;
 }
+.find-out-txt {
+  color: var(--dark-blue) !important;
+  font-size: 16px;
+}
+
 .contact-section {
   margin: 2rem 0;
+}
+.comparison-section{
+  padding: 1rem ;
+}
+.primary-circle {
+  width: 5rem;
+  height: 5rem;
+  background: #547bf9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ol.services-list {
+  padding-left: 1rem;
+}
+.service{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.service-des-txt{
+  margin: 0.5rem 0;
 }
 .advantages {
   display: flex;
@@ -140,14 +162,12 @@
   gap: 0.5rem;
 }
 
-
-
 .signup-content {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 .subscribe-form {
   width: 100%;
@@ -161,9 +181,9 @@
   border-radius: 70px;
 }
 .subscribe-form .input-felid button {
-  background: #0e314c;
+  background: var(--btn-color);
   border-radius: 70px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: none;
   color: white;
 }
@@ -178,4 +198,9 @@
   }
 }
 
-
+@media (min-width: 992px) {
+  .find-out-txt {
+    color: var(--dark-blue) !important;
+    font-size: 24px;
+  }
+}

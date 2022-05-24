@@ -182,7 +182,7 @@ const About = () => {
 
       {/* contact-section */}
       <section className="contact-section" ref={ref => (contactSection = ref)}>
-        <div className="light-blue-bg">
+        <div className="light-blue-bg pt-3 pb-3">
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">

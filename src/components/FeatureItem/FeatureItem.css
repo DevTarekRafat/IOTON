@@ -15,7 +15,8 @@
 }
 .feature-img-container {
   position: relative;
-  padding: 1.5rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +26,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .feature .explore-btn {
   padding: 0.5rem 1.5rem;

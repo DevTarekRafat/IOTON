@@ -2,10 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Landing.css";
 import { FeatureItem } from "../../components/FeatureItem/FeatureItem";
 import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
+import { ReactComponent as ServiceIcon } from "../../icons/security.svg";
+import { ReactComponent as IntegrableIcon } from "../../icons/integratable.svg";
+import { ReactComponent as CustomizableIcon } from "../../icons/customizable.svg";
+import { ReactComponent as ConvenientIcon } from "../../icons/convenient.svg";
+import { ReactComponent as HeartIcon } from "../../icons/heart.svg";
+import { ReactComponent as DollarIcon } from "../../icons/dollar.svg";
 import Card from "../../components/Card/Card";
 import LightHouse from "../../components/LightHouse/LightHouse";
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -101,8 +105,8 @@ export const cards = [
   {
     title: "What is the Internet of things?",
     owner: "Amaia",
-    src: "imgs/Thermoton.png",
-    params: "Thermoton",
+    src: "imgs/IOT.png",
+    params: "IOT",
     summary:
       "Welcome to IOTON, an innovative tech start-app that automates existing procedures through technology solutions, starting from the catering industry, medical, road traffic control, and more. We work with almost all areas of industry to provide solutions from industrial scale to personal consumers use. We achieve our objectives by using the latest technologies starting from creating integrated systems that use system on chip devices, to problem solving using computer vision and AI.",
     details: [
@@ -129,7 +133,7 @@ export const cards = [
       {
         description:
           "Just as connection was critical to the growth of the Internet of Things, cloud computing's ascent has been inextricably linked to its progress. Cloud IoT services, with their capacity to supply processing power and high-volume storage on demand, cleared the way for IoT devices to collect and send increasingly vast and complex data sets. Private cloud solutions have also enabled enterprises to manage larger volumes and types of IoT data while still preserving the security of a closed system.",
-        imgSrc: "./imgs/evolution.png",
+        imgSrc: "./imgs/electric.png",
       },
     ],
   },
@@ -138,8 +142,8 @@ export const cards = [
     summary:
       "       The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator. These gadgets may gather and send data via the Internet, adding to the huge universe of data. Intelligent communication is transforming our reality as well as the competitive dynamics in business. For example, you might use creative communication in the form of an online store coupled with the WooCommerce variable pricing plugin to offer a knowledge of the cost per product variable. To demonstrate the rapid rise of IoT and its influence on our lives and companies, we have selected the 10 most astounding IoT facts to demonstrate that they exist and will continue.",
     owner: "Amaia",
-    src: "imgs/computing.png",
-    params: "computing",
+    src: "imgs/electric.png",
+    params: "electric",
     details: [
       {
         title: "Transportation",
@@ -319,6 +323,44 @@ const Landing = () => {
         "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
     },
   ];
+  const services = [
+    {
+      name: "High Security / GDPR",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!",
+      icon: <ServiceIcon />,
+    },
+    {
+      name: "Integratable",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!",
+      icon: <IntegrableIcon />,
+    },
+    {
+      name: "Cost Effective",
+      description:
+        "At a competitive price, compared to the similar existing products in the industry, IOTON offers cost effective products without compromising quality or efficiency.",
+      icon: <DollarIcon />,
+    },
+    {
+      name: "Customizable",
+      description:
+        "Our products are fully customizable for our clients needs and specific requirements. Using the latest technology we adapt to different environments. ",
+      icon: <CustomizableIcon />,
+    },
+    {
+      name: "Convenient",
+      description:
+        "At IOTON, we work to make our clinets live more efficient. By using a modern user interface we are able to provide all in one solutions. ",
+      icon: <ConvenientIcon />,
+    },
+    {
+      name: "Sustainable ",
+      description:
+        "At IOTON, we work to make our clinets live more efficient. By using a modern user interface we are able to provide all in one solutions.",
+      icon: <HeartIcon />,
+    },
+  ];
 
   return (
     <React.Fragment>
@@ -411,18 +453,24 @@ const Landing = () => {
 
       {/* cms-section */}
       <section className="cms-section" ref={ref => (cmsSection = ref)}>
-        <div className="partners-header">
-          <h1>Our powerful CMS</h1>
-          <div className="separator"></div>
-        </div>
-        <br />
-        <br />
-        <div className="light-blue-bg">
+        <div className="light-blue-bg pt-3 pb-3">
+          <div className="partners-header">
+            <h2>Our powerful CMS</h2>
+            <div className="separator"></div>
+          </div>
+          <br />
+          <br />
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">
+                <div id="coldRoom" className="mb-5 ">
+                  <img src="imgs/cold-room.png" alt="" className="img-fluid" />
+                </div>
+              </div>
+
+              <div className="col-md-6 col-12">
                 <div className="f-center h-100 mb-5">
-                  <div>
+                  <div className="bg-white p-3">
                     <h2>Web - IOS - Android Connectet</h2>
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -445,21 +493,10 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-12">
-                <div id="coldRoom" className="mb-5 ">
-                  <img src="imgs/cold-room.png" alt="" className="img-fluid" />
-                </div>
-              </div>
-
-              <div className="col-md-6 col-12">
-                <div className="mb-5">
-                  <img src="imgs/Thermoton.png" alt="" className="img-fluid" />
-                </div>
-              </div>
 
               <div className="col-md-6 col-12">
                 <div className=" mb-5">
-                  <div>
+                  <div className="bg-white p-3">
                     <h2>Thermoton</h2>
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -483,6 +520,12 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="col-md-6 col-12">
+                <div className="mb-5">
+                  <img src="imgs/Thermoton.png" alt="" className="img-fluid" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -494,7 +537,7 @@ const Landing = () => {
           <div className="row justify-content-center">
             <div className="col-md-6 col-12">
               <div className="partners-header text-center">
-                <h1>Explore Our Use Cases</h1>
+                <h2>Explore Our Use Cases</h2>
                 <div className="separator"></div>
                 <br />
                 <LightHouse />
@@ -506,9 +549,6 @@ const Landing = () => {
             {exploreCards.map(card => {
               return <ExploreCard {...card} key={card.title} />;
             })}
-          </div>
-          <div className="f-center mt-5">
-            <button className="explore-btn">Explore more</button>
           </div>
         </div>
       </section>
@@ -530,19 +570,19 @@ const Landing = () => {
 
               <div className="col-md-6 col-12">
                 <div className="h-100 f-center">
-                  <div className="contact-content text-center">
-                    <h1>Talk to us about your idea! </h1>
+                  <div className="contact-content">
+                    <h2>Talk to us about your idea! </h2>
                     <br />
-                    <h3>
+                    <p className="find-out-txt">
                       To find out more about IOTON, or to discuss how we may be
                       of service to you, please get in touch.
-                    </h3>
+                    </p>
                     <p>
                       Unlock the potential of pioneering IoT technology for your
                       business.
                     </p>
                     <div>
-                      <button className="custom-btn">contact us</button>
+                      <button className="custom-btn">Contact Us</button>
                     </div>
                   </div>
                 </div>
@@ -558,68 +598,47 @@ const Landing = () => {
         ref={ref => (comparisonSection = ref)}
       >
         <div className="partners-header">
-          <h1>Why We Are Best From Others</h1>
+          <h2>Why IOTON?</h2>
+          <p>
+            Aiming towards accessible, fast and intelligent services IOTON
+            garantees the following commodities
+          </p>
           <div className="separator"></div>
         </div>
         <br />
         <br />
         <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-12">
-              <div className="mb-5">
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan facilisis.
-                  </p>
+          <ol className="services-list">
+            <div className="row">
+              {services.map(({ name, icon, description }, idx) => (
+                <div
+                  className={`col-md-5 ${idx % 2 !== 0 && "offset-md-2"}  `}
+                  key={name}
+                >
+                  <span></span>
+                  <div className="service">
+                    <div className="primary-circle">{icon}</div>
+                    <h4>
+                      <li>{name}</li>
+                      {description && (
+                        <p className="service-des-txt">{description}</p>
+                      )}
+                    </h4>
+                  </div>
                 </div>
-              </div>
-              <div className="advantages">
-                <ul>
-                  <li>
-                    <h2>Super Responsive</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </li>
-                  <li>
-                    <h2>Super Responsive</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </li>
-                  <li>
-                    <h2>Super Responsive</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+              ))}
+              <div className="col-md-5"></div>
             </div>
-            <div className="col-md-6 col-12">
-              <div className="f-end mb-5">
-                <img src="imgs/comparison.png" alt="" className="img-fluid" />
-              </div>
-            </div>
-          </div>
+          </ol>
         </div>
       </section>
 
       {/* blogs */}
       <section className="blogs" ref={ref => (blogsSection = ref)}>
-        <div className="light-blue-bg">
+        <div className="light-blue-bg pt-3 pb-3">
           <div className="container">
             <div className="partners-header">
-              <h1>Discover More</h1>
+              <h2>Discover More</h2>
               <div className="separator"></div>
               <br />
               <p>
@@ -642,7 +661,7 @@ const Landing = () => {
       <section className="team-section" ref={ref => (teamSection = ref)}>
         <div className="container">
           <div className="partners-header">
-            <h1>Our Awesome Team</h1>
+            <h2>Our Awesome Team</h2>
             <div className="separator"></div>
             <br />
             <p>
@@ -680,7 +699,7 @@ const Landing = () => {
       </section>
 
       <section className="signup-section" ref={ref => (signupSection = ref)}>
-        <div className="light-blue-bg">
+        <div className="light-blue-bg pt-3 pb-3">
           <div className="container">
             <div className="row">
               <div className="col-md-4 col-12">
@@ -695,16 +714,12 @@ const Landing = () => {
               <div className="col-md-2 col-12"></div>
               <div className="col-md-6 col-12">
                 <div className="signup-content">
-                  <div className="partners-header">
-                    <h1>Sign up to our Newsletter</h1>
-                    <div className="separator"></div>
-                    <br />
-                    <p>
-                      We celebrate our successes and look forward to new
-                      opportunities. Collaboration is key challenges and having
-                      fun at the same time, we’re built upon this way.
-                    </p>
-                  </div>
+                  <p>KEEP UPDATED</p>
+                  <h6>NEWSLETTER</h6>
+                  <p>
+                    Enter your email to stay in the loop on new collections,
+                    pop-up show sand more
+                  </p>
                   <div className="subscribe-form">
                     <form>
                       <div className="input-felid">
@@ -742,14 +757,20 @@ export const Partner = ({ src, name }) => {
 
 const ExploreCard = ({ title, src, description }) => (
   <div className="col-md-6 col-12 mb-3">
-    <div className="explore-card fg-between h-100">
-      <div>
-        <img src={src} alt="" className="img-fluid" />
-      </div>
-      <div>
-        <h5>{title}</h5>
-        <p>{description}</p>
-        <span>View Details</span>
+    <div className="explore-card h-100">
+      <div className="row">
+        <div className="col-md-3 col-12">
+          <div className="f-center m-2">
+            <img src={src} alt="" className="img-fluid" />
+          </div>
+        </div>
+        <div className="col-md-9 col-12">
+          <div>
+            <h5>{title}</h5>
+            <p>{description}</p>
+            <span>View Details</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@ const Privacy = () => {
         <h1>Privacy Policy</h1>
         <br />
       </div>
-      <div className="light-blue-bg">
+      <div className="light-blue-bg pt-3 pb-3">
         <div className="container">
           <h3>Welcome to our Privacy Policy</h3>
           <p>
