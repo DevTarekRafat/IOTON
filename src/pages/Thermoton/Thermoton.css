@@ -1,0 +1,10 @@
+.Thermoton-section {
+  padding: 2rem 0;
+}
+.blue-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #547bf9;
+  box-shadow: 0px 7.73438px 116.016px rgba(62, 130, 252, 0.35);
+}

@@ -12,6 +12,7 @@ import Card from "../../components/Card/Card";
 import LightHouse from "../../components/LightHouse/LightHouse";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import CircledIcon from "../../components/CircledIcon/CircledIcon";
 
 export const breakPoints = [
   { width: 550, itemsToShow: 2 },
@@ -327,13 +328,13 @@ const Landing = () => {
     {
       name: "High Security / GDPR",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!",
+        "Data security and privacy is our number one priority when using our latest platform or IoT solutions. We comply with both current UK Data Protection laws, all major industry standards and upcoming changes to GDPR.",
       icon: <ServiceIcon />,
     },
     {
       name: "Integratable",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!",
+        "Through our API our application can seamlessly integrate with any platforms of you choice such Google, Amazon, Slack, SMS or reporting frameworks and our alerting system. This will give our clients full control of their data at anytime, everywhere. ",
       icon: <IntegrableIcon />,
     },
     {
@@ -610,24 +611,9 @@ const Landing = () => {
         <div className="container">
           <ol className="services-list">
             <div className="row">
-              {services.map(({ name, icon, description }, idx) => (
-                <div
-                  className={`col-md-5 ${idx % 2 !== 0 && "offset-md-2"}  `}
-                  key={name}
-                >
-                  <span></span>
-                  <div className="service">
-                    <div className="primary-circle">{icon}</div>
-                    <h4>
-                      <li>{name}</li>
-                      {description && (
-                        <p className="service-des-txt">{description}</p>
-                      )}
-                    </h4>
-                  </div>
-                </div>
+              {services.map((service, idx) => (
+                <CircledIcon {...service} idx={idx}  key={idx}/>
               ))}
-              <div className="col-md-5"></div>
             </div>
           </ol>
         </div>

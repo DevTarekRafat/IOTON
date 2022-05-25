@@ -25,6 +25,7 @@
 .fg-between {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 .f-around{
   display: flex;

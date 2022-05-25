@@ -13,10 +13,11 @@ import Team from "./pages/Team/Team";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import Thermoton from "./pages/Thermoton/Thermoton";
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route index  element={<Landing />} />
+        <Route index element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/blogs/:src" element={<BlogDetails/>} />
+        <Route path="/blogs/:src" element={<BlogDetails />} />
+        <Route path="/thermoton" element={<Thermoton />} />
       </Routes>
       <Footer />
     </BrowserRouter>
