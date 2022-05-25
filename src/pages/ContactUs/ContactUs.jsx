@@ -5,7 +5,6 @@ import { ReactComponent as Location } from "../../icons/location.svg";
 import { ReactComponent as Call } from "../../icons/call.svg";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 
-
 const ContactUs = () => {
   return (
     <section className="contact">
@@ -45,7 +44,7 @@ const ContactUs = () => {
                 <Call />
               </div>
               <h4>Follow US</h4>
-              <SocialMedia/>
+              <SocialMedia />
             </div>
           </div>
         </div>
@@ -60,8 +59,8 @@ const ContactUs = () => {
           <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
         </div>
 
-<br />
-<br />
+        <br />
+        <br />
         <div className="contact-form-section">
           <div className="container">
             <div className="row">
