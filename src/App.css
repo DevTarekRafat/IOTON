@@ -17,9 +17,19 @@
   align-items: center;
   justify-content: center;
 }
+.f-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .fg-between {
   display: flex;
   gap: 0.5rem;
+}
+.f-around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 :root {
   --blue: #4a6f8a;
@@ -29,7 +39,7 @@
   --gray:#5D616F;
   --black:#05060A;
   --btn-color: #547bf9;
-  --btn-radius: 4px;
+  --btn-radius: 40px;
   --h1-font: 40px;
   --card-radius: 20px;
 }

@@ -8,6 +8,7 @@ import { ReactComponent as Instagram } from "../../icons/instagram.svg";
 import { ReactComponent as Location } from "../../icons/location.svg";
 import { ReactComponent as Email } from "../../icons/email.svg";
 import { Link } from "react-router-dom";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 export const Footer = () => {
   return (
@@ -107,18 +108,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li className="social-media">
-                <a href="#">
-                  <Facebook />
-                </a>
-                <a href="#">
-                  <Twitter />
-                </a>
-                <a href="#">
-                  <Instagram />
-                </a>
-                <a href="#">
-                  <Linkedin />
-                </a>
+                <SocialMedia/>
               </li>
             </ul>
           </div>

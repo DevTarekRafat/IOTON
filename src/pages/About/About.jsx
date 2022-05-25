@@ -3,15 +3,16 @@ import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
 import { animSection, breakPoints, items, Partner } from "../Landing/Landing";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
-import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import "./About.css";
 
 const About = () => {
   let heroSection = useRef(null);
   let teamSection = useRef(null);
   let uxSection = useRef(null);
   let contactSection = useRef(null);
-  let partnersSection = useRef(null);
+  // let partnersSection = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +20,7 @@ const About = () => {
     animSection(teamSection);
     animSection(uxSection);
     animSection(contactSection);
-    animSection(partnersSection);
+    // animSection(partnersSection);
   }, []);
 
   const team = [
@@ -59,8 +60,62 @@ const About = () => {
 
   return (
     <>
-      <section className="landing">
-        <section className="hero-section" ref={ref => (heroSection = ref)}>
+      <section className="about-section" ref={ref => (heroSection = ref)}>
+        <div className="container">
+          <div className="row">
+            <div className="offset-md-2 col-md-8">
+              <div className="text-center">
+                <h2>About Us</h2>
+                <p>
+                  We are an innovative tech start-app that automates existing
+                  procedures through technology solutions. Starting from the
+                  catering industry, medical, road traffic control, and more, we
+                  work with almost all areas of industry to provide solutions
+                  from industrial scale to personal consumers use. We achieve
+                  our objectives by using the latest technologies starting from
+                  creating integrated systems that use system on chip devices,
+                  to problem solving using computer vision and AI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="row">
+            <div className="col-md-6">
+              <div>
+                <img src="./imgs/about-us.png" alt="" className="img-fluid" />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="h-100 f-around flex-column">
+                <div>
+                  <h3>Our Mission</h3>
+                  <p>
+                    Our goal is to help our partners and clients save, advance
+                    and succeed by offering comprehensive and strong IOT data
+                    analysis.
+                  </p>
+                </div>
+                <div>
+                  <h3>Our History</h3>
+                  <p>
+                    This project wouldn’t be able to succeed without the help of
+                    our amazing team. Slowly but surely, the team is growing,
+                    and we push one another to thrive and reach our full
+                    potential. Starting as a simple idea to help make cold room
+                    temperature readings more efficient in the hospitality
+                    industry, Tareq , founder and senior software engineer
+                    started developing the “Thermoton”. Later joined by Flori,
+                    our senior hardware engineer, they further developed the
+                    idea and built the basis of what we now know as IOTON.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <section className="hero-section" ref={ref => (heroSection = ref)}>
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">
@@ -89,25 +144,28 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </section>
 
       <section
-        className="team-section light-blue-bg"
+        className="team-section light-blue-bg pt-3 pb-3"
         ref={ref => (teamSection = ref)}
       >
         <div className="container">
-          <div className="partners-header">
-            <h1>Our Awesome Team</h1>
-            <div className="separator"></div>
-            <br />
-            <p>
-              We celebrate our successes and look forward to new opportunities.
-              Collaboration is key challenges and having fun at the same time,
-              we’re built upon this way.{" "}
-            </p>
+          <div className="row">
+            <div className="offset-md-2 col-md-8">
+              <div className="partners-header text-center">
+                <h1>Our Awesome Team</h1>
+                <div className="separator"></div>
+                <br />
+                <p>
+                  We celebrate our successes and look forward to new
+                  opportunities. Collaboration is key challenges and having fun
+                  at the same time, we’re built upon this way.{" "}
+                </p>
+              </div>
+            </div>
           </div>
-          <br />
           <br />
           <div className="row">
             {team.map(({ name, src, title, linkedIn, preview }) => (
@@ -133,47 +191,46 @@ const About = () => {
       </section>
 
       {/* ux */}
-      <section className="ux" ref={ref => (uxSection = ref)}>
+      <section className="ux-section" ref={ref => (uxSection = ref)}>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-6 col-12">
+          <div className="row">
+            <div className="offset-md-2 col-md-8">
               <div className="partners-header text-center">
-                <h1>We always try to understand users expectation</h1>
-                <div className="separator"></div>
-                <br />
-                <br />
+                <h2>We Always Try To Understand Users Expectation</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
+                <br />
+                <div className="separator"></div>
               </div>
-            </div>
-          </div>
-          <br />
-          <br />
-          <div className="row">
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>180K</h2>
-                <p>Downloaded</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>20K</h2>
-                <p>Feedback</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>500+</h2>
-                <p>Users</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-sm-6 col-12">
-              <div className="text-center mb-2">
-                <h2>70+</h2>
-                <p>Contributors</p>
+              <br />
+
+              <div className="row">
+                <div className="col-md-3 col-sm-6 col-12">
+                  <div className="text-center number-container">
+                    <h2>180K</h2>
+                    <p>Downloaded</p>
+                  </div>
+                </div>
+                <div className="col-md-3 col-sm-6 col-12">
+                  <div className="text-center number-container">
+                    <h2>20K</h2>
+                    <p>Feedback</p>
+                  </div>
+                </div>
+                <div className="col-md-3 col-sm-6 col-12">
+                  <div className="text-center number-container">
+                    <h2>500+</h2>
+                    <p>Users</p>
+                  </div>
+                </div>
+                <div className="col-md-3 col-sm-6 col-12">
+                  <div className="text-center number-container">
+                    <h2>70+</h2>
+                    <p>Contributors</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -182,7 +239,7 @@ const About = () => {
 
       {/* contact-section */}
       <section className="contact-section" ref={ref => (contactSection = ref)}>
-        <div className="light-blue-bg pt-3 pb-3">
+        <div className="light-blue-bg ">
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-12">
@@ -197,7 +254,7 @@ const About = () => {
 
               <div className="col-md-6 col-12">
                 <div className="h-100 f-center">
-                  <div className="contact-content text-center">
+                  <div className="contact-content">
                     <h1>Talk to us about your idea! </h1>
                     <br />
                     <h3>
@@ -208,7 +265,7 @@ const About = () => {
                       Unlock the potential of pioneering IoT technology for your
                       business.
                     </p>
-                    <div>
+                    <div className="f-start">
                       <button className="custom-btn">contact us</button>
                     </div>
                   </div>
@@ -220,7 +277,7 @@ const About = () => {
       </section>
 
       {/* partners-section */}
-      <section
+      {/* <section
         className="partners-section"
         ref={ref => (partnersSection = ref)}
       >
@@ -248,7 +305,7 @@ const About = () => {
             </Swiper>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

@@ -3,10 +3,8 @@ import "./ContactUs.css";
 import { ReactComponent as Email } from "../../icons/email.svg";
 import { ReactComponent as Location } from "../../icons/location.svg";
 import { ReactComponent as Call } from "../../icons/call.svg";
-import { ReactComponent as Linkedin } from "../../icons/Linkedin.svg";
-import { ReactComponent as Facebook } from "../../icons/Facebook.svg";
-import { ReactComponent as Instagram } from "../../icons/instagram.svg";
-import { ReactComponent as Twitter } from "../../icons/Twitter.svg";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
+
 
 const ContactUs = () => {
   return (
@@ -47,18 +45,12 @@ const ContactUs = () => {
                 <Call />
               </div>
               <h4>Follow US</h4>
-              <div className="fg-between">
-                <Linkedin />
-                <Facebook />
-                <Instagram />
-                <Twitter />
-              </div>
+              <SocialMedia/>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="map"></div>
       <br />
       <section className="in-touch">
         <div className="f-center flex-column">
@@ -68,6 +60,8 @@ const ContactUs = () => {
           <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
         </div>
 
+<br />
+<br />
         <div className="contact-form-section">
           <div className="container">
             <div className="row">

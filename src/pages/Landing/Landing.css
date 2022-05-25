@@ -105,9 +105,6 @@
   font-size: 16px;
 }
 
-.contact-section {
-  margin: 2rem 0;
-}
 .comparison-section{
   padding: 1rem ;
 }
@@ -147,9 +144,9 @@ ol.services-list {
   color: var(--dark-blue);
 }
 
-.team-section {
+/* .team-section {
   margin: 2rem 0;
-}
+} */
 .team-card {
   display: flex;
   flex-direction: column;
