@@ -303,13 +303,13 @@ const Landing = () => {
       title: "Swarm Operations",
       src: "imgs/swarm.png",
       description:
-        "Ioton have contructed a team of specialists, that are working in a micro-UAV’s technology, to construct 3D shapes in the open-air.",
+        "Ioton have constructed a team of specialists, that are working in a micro-UAV’s technology, to construct 3D shapes in the open-air.",
     },
     {
       title: "Next Generation Ananometer",
       src: "imgs/ananometer.png",
       description:
-        "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
+        "Ioton is currently working in a next generation cutting adge technology of Anemometers, called by us Anemoton.",
     },
     {
       title: "Smart Traffic Light Control",
@@ -466,6 +466,11 @@ const Landing = () => {
               <div className="col-md-6 col-12">
                 <div id="coldRoom" className="mb-5 ">
                   <img src="imgs/cold-room.png" alt="" className="img-fluid" />
+                  <img
+                    src="./imgs/cold-room.svg"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
               </div>
 
@@ -628,7 +633,7 @@ const Landing = () => {
               <div className="separator"></div>
               <br />
               <p>
-                Follow our blog to find out more about the lastest updates in
+                Follow our blog to find out more about the latest updates in
                 the industry, IoT’s and all things related to IOTON.
               </p>
             </div>

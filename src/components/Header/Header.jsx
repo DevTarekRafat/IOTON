@@ -46,16 +46,16 @@ const Header = () => {
                 </li>
 
                 <li className="link-item">
-                  <a
+                  <Link
                     className="link dropdown-toggle"
-                    href="#"
+                    to="/"
                     id="navbarScrollingDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Solutions
-                  </a>
+                  </Link>
 
                   <ul
                     className="dropdown-menu"
@@ -63,18 +63,18 @@ const Header = () => {
                   >
                     <div id="solution-dropdown">
                       <li className="solution-li">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/thermoton">
                           Thermoton
-                        </a>
+                        </Link>
                         <span>
                           Management of cantering industry revolution begins
                           with us.
                         </span>
                       </li>
                       <li className="solution-li">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/anemoton">
                           Anemoton
-                        </a>
+                        </Link>
                         <span>
                           Management of cantering industry revolution begins
                           with us.
@@ -88,46 +88,18 @@ const Header = () => {
                 </li>
 
                 <li className="link-item">
-                  <a
-                    className="link dropdown-toggle"
-                    href="#"
-                    id="navbarScrollingDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <Link
+                    className="link"
+                    to="/about">
                     About
-                  </a>
+                  </Link>
 
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="navbarScrollingDropdown"
-                  >
-                    <li>
-                      <Link className="dropdown-item" to="/about">
-                        About us
-                      </Link>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li className="link-item">
-                  <a className="link" href="">
+                  <Link className="link" to="/blogs">
                     Blog
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="link-item">
