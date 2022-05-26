@@ -8,3 +8,21 @@
   background: #547bf9;
   box-shadow: 0px 7.73438px 116.016px rgba(62, 130, 252, 0.35);
 }
+.waves{
+  /* background-image: url(../../icons/waves.png);
+  background-size: cover; */
+}
+.fc-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.specification{
+  padding: 1rem;
+  border: 1px solid #547BF9;
+box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}

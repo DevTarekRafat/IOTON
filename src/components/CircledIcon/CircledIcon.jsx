@@ -2,10 +2,10 @@ import React from "react";
 import "./CircledIcon.css";
 
 const CircledIcon = props => {
-  const { idx, name, icon, description } = props;
+  const { idx, name, icon, description,col } = props;
 
   return (
-    <div className="col-md-5 offset-md-1" >
+    <div className={`${col ? col: 'col-md-5 offset-md-1'}`} >
       <span></span>
       <div className="service">
         <div className="primary-circle">{icon}</div>
