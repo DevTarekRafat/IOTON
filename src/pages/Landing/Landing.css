@@ -29,18 +29,18 @@
   border-radius: 40px;
   align-content: center;
 }
-.arrow{
+.arrow {
   /* arrow svg */
   background-image: url("data:image/svg+xml,%3Csvg width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.888 15.0086L10.634 13.7838L15.5332 8.88461H0.19397V7.13488H15.5332L10.6048 2.2065L11.8588 0.981689L18.8869 8.00975L11.888 15.0086Z' fill='white'/%3E%3C/svg%3E%0A");
   background-position: right 3px center;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-
 }
 
-.custom-btn:hover, .arrow:hover{
-  background-color: #4698FB;
+.custom-btn:hover,
+.arrow:hover {
+  background-color: #4698fb;
 }
 
 .internet-txt {
@@ -93,7 +93,7 @@
 
 .explore-card {
   padding: 1rem;
-  background: rgba(224, 239, 254, 0.45);;
+  background: rgba(224, 239, 254, 0.45);
   box-sizing: border-box;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -118,8 +118,8 @@
   font-size: 16px;
 }
 
-.comparison-section{
-  padding: 1rem ;
+.comparison-section {
+  padding: 1rem;
 }
 .primary-circle {
   width: 5rem;
@@ -133,14 +133,14 @@
 ol.services-list {
   padding-left: 1rem;
 }
-.service{
+.service {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
 }
-.service-des-txt{
+.service-des-txt {
   margin: 0.5rem 0;
 }
 .advantages {

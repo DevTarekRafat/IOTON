@@ -54,70 +54,116 @@ const Thermoton = () => {
 
   return (
     <section className="Thermoton-section">
-      <div className="container">
-        <div className="row">
-          <div className="offset-md-2 col-md-8">
-            <h2>
-              Our powerful CMS (Control Management System) is a fully integrated
-              system that is made of many features
-            </h2>
-            <br />
-            <h3>There are 3 different accounts available.</h3>
+      <div className="main-thermoton">
+        <div className="thermoton-content">
+          <h3>
+            All it takes to run a successful <br /> catering business without
+            any hassle.
+          </h3>
+
+          <div>
+            <h2>Thermoton</h2>
+            <p>Free yourself from paperwork</p>
           </div>
         </div>
-        <br />
-        <div className="row">
-          <div className="offset-md-2 col-md-8">
-            <div className="f-around">
-              <div className="fg-between">
-                <div className="blue-dot"></div>
-                <span>Employee Account</span>
-              </div>
+      </div>
 
-              <div className="fg-between">
-                <div className="blue-dot"></div>
-                <span>Manager Account</span>
-              </div>
-
-              <div className="fg-between">
-                <div className="blue-dot"></div>
-                <span>Admin Account</span>
+      <div className="dashboard">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div>
+                <img src="./imgs/dashboard.png" alt="" className="img-fluid" />
               </div>
             </div>
-            <br />
-            <p>
-              All of the captured Records are stored in the cloud and can be
-              accessed at anytime, in any form, starting from Reports to visual
-              presentation
-            </p>
           </div>
+          <br />
+          <div className="row">
+            <div className="offset-md-2 col-md-8">
+              <div className="text-center">
+                <h2>CMS features</h2>
+                <p>
+                  All of the captured Records are stored in the cloud and can be
+                  accessed at anytime, in any form, starting from Reports to
+                  visual presentation
+                </p>
+                <br />
+                <h3 className="text-center">3 different accounts available.</h3>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="row">
+            <div className="offset-md-2 col-md-8">
+              <div className="f-around">
+                <div className="fg-between">
+                  <div className="blue-dot"></div>
+                  <span>Employee Account</span>
+                </div>
+
+                <div className="fg-between">
+                  <div className="blue-dot"></div>
+                  <span>Manager Account</span>
+                </div>
+
+                <div className="fg-between">
+                  <div className="blue-dot"></div>
+                  <span>Admin Account</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="row">
+            <div className="col-md-6 col-12">
+              <div>
+                <img src="./imgs/sofa.png" alt="" className="img-fluid" />
+              </div>
+            </div>
+            <div className="col-md-6 col-12">
+              <div className="sofa-txt-container">
+                <h3>Food And Safety Control System</h3>
+                <h4>Temperature Records</h4>
+                <p>
+                  Through our cutting edge smart device Thermoton we provide
+                  temperature reading monitoring solutions. By automating manual
+                  temperature checks, we offer conveniency and accessibility.
+                  This device automatically measures the environment temperature
+                  and it uploads the data to the cloud making the information
+                  easy to access from anywhere at any time. Our smart device has
+                  been designed to offer a variety of solutions and adapt to
+                  different environments, ranging from large-scale industrial
+                  use to commercial standalone use. Therefore, Thermoton can
+                  adjust and monitor any environment that requires precise
+                  temperature monitoring, from fridges, freezers etc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+
+          <div className="row">
+            <div className="offset-md-1 col-md-10 col-12">
+              <p className="text-center">
+                The Thermoton device is linked to a CMS that can be accessed
+                from any device, from iOS to Android, which is shown via an
+                application data visualisation for simpler understanding and
+                data interpretation. The collected records are saved in the
+                cloud and may be viewed from anywhere at any time. When the
+                gadget captures data that exceeds the pre-set temperature limit,
+                the user will be notified through email, SMS, or phone
+                notification. 
+              </p>
+            </div>
+          </div>
+          <br />
         </div>
+      </div>
+      <div className="container">
         <br />
-        <div className="row">
-          <div className="f-center flex-column">
-            <h2>All the CMS features</h2>
-            <br />
-            <h3>Food And Safety Control System</h3>
-            <div className="separator"></div>
-            <br />
-          </div>
-          <div className="col-md-6 col-12"></div>
-          <div className="col-md-6 col-12">
-            <h4>Temperature Records</h4>
-            <br />
-            We provide Temperature monitoring Solution. Meaning, the everyday
-            manual temperature checks are no longer required. This is possible
-            through our cuttingedge smart device “THERMOTON”, that automatically
-            measures the temperature of the environment placed on, upload’s it
-            to tho cloud, so u can access it from anywhere at anytime. Our Smart
-            Device has been build for any use, starting from massive scale
-            industrial use, to commercial standalone device. Features Overviev 2
-            Our Monitoring environment can be cold rooms, Fridge, Frizzers or
-            any environment that requires precise temperature monitoring.
-          </div>
-        </div>
-        <br />
-        <div className="row">
+        {/* <div className="row">
           <div className="text-center">
             <h3>Thermoton Features </h3>
             <br />
@@ -130,8 +176,8 @@ const Thermoton = () => {
             ))}
             <div className="col-md-5"></div>
           </div>
-        </ol>
-        <p>
+        </ol> */}
+        {/* <p>
           All of the captured Records are stored in the cloud and can be
           accessed at anytime, in any form, starting from Reports to visual
           presentation. In case any of the monitoring environment reaches
@@ -139,11 +185,11 @@ const Thermoton = () => {
           or phone app Notification The CMS can be accessed in any platform,
           from IOS and Android application Data visualisation for easies
           understanding
-        </p>
+        </p> */}
         <div className="waves">
           <div className="row">
-            <div className="col-md-6">
-              <div className="fc-center">
+            <div className="offset-md-1 col-md-4">
+              <div className="fc-center ">
                 <h3>HAACP/DFFS/FSA Report</h3>
                 <p>
                   This feature offers the Mangers to create, print, edit and
@@ -155,12 +201,13 @@ const Thermoton = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div>
+            <div className="col-md-7">
+              <div className="f-end">
                 <img src="./imgs/report.png" alt="" className="img-fluid" />
               </div>
             </div>
           </div>
+          <br />
           <div className="row">
             <div className="f-center flex-column">
               <h3>Customised Task management</h3>
@@ -175,7 +222,7 @@ const Thermoton = () => {
                 <img src="./imgs/management.png" alt="" className="img-fluid" />
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-5">
               <div className="fc-center">
                 <h3>HAACP/DFFS/FSA Report</h3>
                 <p>
@@ -197,10 +244,9 @@ const Thermoton = () => {
             </div>
           </div>
           <br />
-          <br />
           <div className="row">
-            <div className="col-md-6">
-              <div className="fc-center">
+            <div className="offset-md-1 col-md-4">
+              <div className="fc-center ">
                 <h3>Incident management</h3>
                 <p>
                   Our CMS have a designated area only to keep truck of all the
@@ -211,8 +257,8 @@ const Thermoton = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div>
+            <div className="col-md-7">
+              <div className="f-end">
                 <img src="./imgs/incident.png" alt="" className="img-fluid" />
               </div>
             </div>
@@ -258,7 +304,7 @@ const Thermoton = () => {
                 In this Section Managers will be able to assign trainings to be
                 completed within our integrated platform.
               </p>
-              <ol className="services-list">
+              {/* <ol className="services-list">
                 <div className="row">
                   {trainings.map((service, idx) => (
                     <CircledIcon
@@ -269,7 +315,7 @@ const Thermoton = () => {
                     />
                   ))}
                 </div>
-              </ol>
+              </ol> */}
             </div>
           </div>
           <div className="col-md-6">

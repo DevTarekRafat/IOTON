@@ -1,18 +1,37 @@
-.Thermoton-section {
-  padding: 2rem 0;
+.main-thermoton {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0efff;
+}
+.thermoton-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.sofa-txt-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
 }
 .blue-dot {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #547bf9;
+  background: rgba(14, 49, 76, 0.15);
   box-shadow: 0px 7.73438px 116.016px rgba(62, 130, 252, 0.35);
 }
-.waves{
-  /* background-image: url(../../icons/waves.png);
-  background-size: cover; */
+.waves {
+  background-image: url(../../icons/waves.png);
+  background-size: cover;
 }
-.fc-center{
+.fc-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,9 +39,15 @@
   height: 100%;
 }
 
-.specification{
+.specification {
   padding: 1rem;
-  border: 1px solid #547BF9;
-box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
+  border: 1px solid #547bf9;
+  box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-thermoton {
+    padding: 1rem;
+  }
 }
