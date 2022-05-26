@@ -1,13 +1,16 @@
 .blog {
   border-radius: var(--card-radius) var(--card-radius) 0 0;
-  padding: 0.5rem;
-  background: white;
+  padding: 1rem;
+  background: #F7FAFD;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .blog-img-container {
   border-radius: var(--card-radius) var(--card-radius) 0 0;
   background-color: var(--light-blue-bg);
   overflow: hidden;
+  padding: 0;
+  margin: auto;
 }

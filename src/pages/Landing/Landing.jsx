@@ -13,6 +13,7 @@ import LightHouse from "../../components/LightHouse/LightHouse";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import CircledIcon from "../../components/CircledIcon/CircledIcon";
+import { Link } from "react-router-dom";
 
 export const breakPoints = [
   { width: 550, itemsToShow: 2 },
@@ -377,16 +378,16 @@ const Landing = () => {
                     <br /> Succeed with us!
                   </h1>
                   <p>
-                    We create highly-sophisticates software{" "}
-                    <span className="primary-txt"> integrated systems</span>{" "}
-                    through customized{" "}
-                    <span className="primary-txt"> IOT devices</span> , process
-                    datas with advanced algorithms and present these datas{" "}
-                    <span className="primary-txt">simplified</span> through
-                    customized through modern user friendly dashboard’s.
+                    We create highly-sophisticated software{" "}
+                   <span className="primary-txt"> integrated systems</span>{" "}
+                    through customised <span className="primary-txt"> IOT devices</span> .
+                    Later processed with advanced algorithms the data is
+                    presented simply through customized, user-friendly
+                    dashboards.
                   </p>
                   <div>
-                    <button className="custom-btn">explore more</button>
+                    <button className="custom-btn arrow">Learn More
+                    </button>
                   </div>
                 </div>
               </div>
@@ -479,23 +480,14 @@ const Landing = () => {
                   <div className="bg-white p-3">
                     <h2>Web - IOS - Android Connectet</h2>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatem, minima quidem! Neque, atque. Tempore eveniet,
-                      eum delectus architecto deserunt vitae odit natus
-                      recusandae aliquam ab error ex ut nostrum nihil?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatem, minima quidem! Neque, atque. Tempore eveniet,
-                      eum delectus architecto deserunt vitae odit natus
-                      recusandae aliquam ab error ex ut nostrum nihil?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatem, minima quidem! Neque, atque. Tempore eveniet,
-                      eum delectus architecto deserunt vitae odit natus
-                      recusandae aliquam ab error ex ut nostrum nihil?
-                    </p>
+                      Our Thermoton device is connected to a CMS that can be easily
+                      accessed from any device, from IOS to Android, which is displayed
+                      through an application data visualisation for easier understanding
+                      and data reading. The collected records are captured in the cloud,
+                      which can be accessed very conveniently, anywhere at any time.
+                      When the device collects data and reaches the pre-set temperature
+                      limit, the user will get a notification via email, SMS, or phone
+                      notification.                    </p>
                   </div>
                 </div>
               </div>
@@ -505,24 +497,17 @@ const Landing = () => {
                   <div className="bg-white p-3">
                     <h2>Thermoton</h2>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatem, minima quidem! Neque, atque. Tempore eveniet,
-                      eum delectus architecto deserunt vitae odit natus
-                      recusandae aliquam ab error ex ut nostrum nihil?
+                      Our Thermoton device is connected to a CMS that can be easily
+                      accessed from any device,  IOS to Android, which is displayed through
+                      an application data visualisation for easier understanding and data
+                      reading. The collected records are captured in the cloud which can
+                      be accessed very conveniently, anywhere at any time.
+                      When the device collects data reaching the pre-set temperature limit,
+                      the user will get a notification via email, SMS or phone notification.
                     </p>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatem, minima quidem! Neque, atque. Tempore eveniet,
-                      eum delectus architecto deserunt vitae odit natus
-                      recusandae aliquam ab error ex ut nostrum nihil?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatem, minima quidem! Neque, atque. Tempore eveniet,
-                      eum delectus architecto deserunt vitae odit natus
-                      recusandae aliquam ab error ex ut nostrum nihil?
-                    </p>
-                    <button className="custom-btn">explore more</button>
+                    <a href="/thermoton">
+                    <button class="custom-btn">explore more</button>
+                    </a>
                   </div>
                 </div>
               </div>

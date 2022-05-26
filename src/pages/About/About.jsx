@@ -209,26 +209,26 @@ const About = () => {
               <div className="row">
                 <div className="col-md-3 col-sm-6 col-12">
                   <div className="text-center number-container">
-                    <h2>180K</h2>
-                    <p>Downloaded</p>
+                    <h2>6+</h2>
+                    <p>Accounts</p>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6 col-12">
                   <div className="text-center number-container">
-                    <h2>20K</h2>
-                    <p>Feedback</p>
+                    <h2>4</h2>
+                    <p>Projects</p>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6 col-12">
                   <div className="text-center number-container">
-                    <h2>500+</h2>
-                    <p>Users</p>
+                    <h2>6+</h2>
+                    <p>Experts</p>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6 col-12">
                   <div className="text-center number-container">
-                    <h2>70+</h2>
-                    <p>Contributors</p>
+                    <h2>21+</h2>
+                    <p>Subscribers</p>
                   </div>
                 </div>
               </div>

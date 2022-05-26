@@ -21,10 +21,10 @@ export const Footer = () => {
             </Link>
             <br />
             <p>
-              We create highly-sophisticates software integrated systems through
-              customized IOT devices, process datas with advanced algorithms and
-              present these datas simplified through modern user friendly
-              dashboard’s.
+               We create highly-sophisticated software integrated systems
+              through customised IOT devices . Later processed with
+              advanced algorithms the data is presented simply
+              through customized, user-friendly dashboards.
             </p>
           </div>
 

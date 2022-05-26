@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <>
-      <nav>
+      <nav className="sticky-top">
         <div className="container">
           <div className="f-between">
             <Link to="/" id="logo">
@@ -122,6 +122,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+
 
       {showMobHeader && (
         <div className={`mob-header ${animClass}`}>

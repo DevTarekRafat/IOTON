@@ -3,16 +3,27 @@
 }
 
 .number-container {
-    padding: 0.5rem 0;
-    margin: 0.5rem 0;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
   background: #ffffff;
-  border: 1px solid #c1c1c1;
-  border-radius: 17px;
+  border: 1.6743px solid #6084A4;
+  border-radius: 17.5802px;
+  height: 141.48px;
+  width: 141.48px;
 }
 
 
-.number-container h2,p{
+.number-container h2{
     margin: 0;
+    position: flex;
+    padding-top: 24px;
+}
+
+.number-container p{
+  margin: 0;
+  position: flex;
+  padding-top: 7px;
 }
 
 .ux-section{
