@@ -1,0 +1,112 @@
+
+#comingsoon {
+/* Coming Soon */
+position: sticky;
+width: 755px;
+height: 164px;
+left: 347.96px;
+top: 229px;
+
+background: linear-gradient(91.23deg, #547BF9 3.29%, rgba(176, 84, 249, 0.11) 98.26%), linear-gradient(0deg, rgba(91, 106, 251, 0.15), rgba(91, 106, 251, 0.15)), url(img_comingSoon.png);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+
+#content {
+font-style: normal;
+font-weight: 800;
+font-size: 109.333px;
+line-height: 164px;
+/* identical to box height */
+text-align: center;
+background: linear-gradient(91.23deg, #547BF9 3.29%, rgba(176, 84, 249, 0.11) 98.26%), linear-gradient(0deg, rgba(91, 106, 251, 0.15), rgba(91, 106, 251, 0.15)), url(img_comingSoon.png);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+#description {
+  position: sticky;
+  width: 730px;
+  height: 48px;
+  left: 364px;
+  top: 419px;
+
+color: rgba(14, 49, 76, 0.65);
+}
+
+#placeholder {
+position: absolute;
+width: 245px;
+height: 21px;
+left: 405px;
+top: 525px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.45);
+}
+
+.notify-form {
+    width: 90%;
+    padding-bottom: 120px;
+    position: sticky;
+    width: 651px;
+    height: 83px;
+    left: 394px;
+    top: 494px;
+    
+  }
+  .notify-form .input-felid {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    background: rgba(84, 123, 249, 0.15);
+    padding: 0.5rem;
+    border-radius: 70px;
+  }
+  .notify-form .input-felid button {
+
+    background: var(--btn-color);
+    border-radius: 70px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 55px;
+    gap: 0px;
+    margin-left: -175px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    
+    position: sticky;
+    width: 161px;
+    height: 69px;
+    left: 877px;
+    top: 501px;
+    
+    background: #547BF9;
+    border-radius: 51px;
+  }
+  .notify-form .email-input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 70px;
+    
+  }
+  
