@@ -27,13 +27,18 @@
   background: rgba(14, 49, 76, 0.15);
   box-shadow: 0px 7.73438px 116.016px rgba(62, 130, 252, 0.35);
 }
+.waves,
+.waves2 {
+  background-size: cover;
+}
 .waves {
   background-image: url(../../icons/waves.png);
-  background-size: cover;
 }
 .waves2 {
   background-image: url(../../icons/waves2.svg);
-  background-size: cover;
+}
+.wave-part:not(:last-child)  {
+  margin-bottom: 15rem;
 }
 .fc-center {
   display: flex;
@@ -49,9 +54,18 @@
   box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
+.text-gap {
+  gap: 0.5rem;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main-thermoton {
     padding: 1rem;
+  }
+  .waves,.waves2{
+    background-image: none;
+  }
+  .wave-part:not(:last-child)  {
+    margin-bottom: 1rem;
   }
 }

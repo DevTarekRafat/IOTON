@@ -27,18 +27,23 @@
   gap: 0.5rem;
   align-items: center;
 }
-.f-around{
+.f-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.fcg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 :root {
   --blue: #4a6f8a;
-  --light-blue: #D6E8FE;
+  --light-blue: #d6e8fe;
   --light-blue-bg: rgba(70, 152, 251, 0.2);
   --dark-blue: #0e314c;
-  --gray:#5D616F;
-  --black:#05060A;
+  --gray: #5d616f;
+  --black: #05060a;
   --btn-color: #547bf9;
   --btn-radius: 40px;
   --h1-font: 40px;
@@ -52,12 +57,18 @@ h5,
 h6 {
   color: var(--black);
   font-family: "Meutas";
+  margin-bottom: 0 !important;
+}
+p {
+  font-size: 1rem;
 }
 p,
 a,
 span {
   color: var(--gray) !important;
   font-family: "Open Sans";
+}
+span {
   font-size: 14px;
 }
 .partner-carousel .kdCslO {
@@ -66,6 +77,13 @@ span {
 .form-group {
   margin-bottom: 1rem;
 }
-.pointer{
+.pointer {
   cursor: pointer;
+}
+.table-header {
+  background-color: #f5f6fc;
+}
+
+table {
+  border-collapse: initial !important;
 }

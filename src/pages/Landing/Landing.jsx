@@ -401,34 +401,6 @@ const Landing = () => {
         </section>
       </section>
 
-      {/* partners-section */}
-      {/* <section className="partners-section">
-        <div className="container">
-          <div className="partners-header">
-            <h2>Our Partners</h2>
-            <div className="separator"></div>
-          </div>
-          <br />
-          <br />
-          <div className="partner-carousel">
-            <Swiper
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={10}
-              slidesPerView={4}
-              breakpoints={breakPoints}
-              navigation
-              loop
-            >
-              {items.map(item => (
-                <SwiperSlide key={item.name}>
-                  <Partner name={item.name} src={item.src} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </section> */}
-
       {/* features-section */}
       <section
         className="features-section"
@@ -506,7 +478,7 @@ const Landing = () => {
                       the user will get a notification via email, SMS or phone notification.
                     </p>
                     <a href="/thermoton">
-                    <button class="custom-btn">explore more</button>
+                    <button className="custom-btn">explore more</button>
                     </a>
                   </div>
                 </div>
