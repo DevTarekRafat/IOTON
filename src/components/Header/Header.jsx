@@ -109,8 +109,8 @@ const Header = () => {
                 </li>
               </ul>
               <div className="group-btn fg-between">
-                <button className="support-btn">Support</button>
-                <button className="login-btn">login</button>
+                {/* <button className="support-btn">Support</button>
+                <button className="login-btn">login</button> */}
               </div>
             </div>
 

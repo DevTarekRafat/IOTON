@@ -2,6 +2,39 @@
   font-family: "Meutas";
   src: local("Meutas"), url(fonts/Meutas-Regular.otf) format("woff");
 }
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Regular"), url(fonts/Poppins-Regular.ttf) format("TrueType");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins SemiBold"), url(fonts/Poppins-SemiBold.ttf) format("TrueType");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Medium"), url(fonts/Poppins-Medium.ttf) format("TrueType");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Light Italic"), url(fonts/Poppins-LightItalic.ttf) format("TrueType");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Light"), url(fonts/Poppins-Light.ttf) format("TrueType");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url(fonts/OpenSans-Regular.ttf) format("TrueType");
+  font-weight: normal;
+}
+
 .f-between {
   display: flex;
   justify-content: space-between;

@@ -1,5 +1,6 @@
 import React from "react";
 import { termsAndConditionsList } from "./listText";
+import "./TermsAndConditions.css";
 
 const TermsAndConditions = () => {
   return (

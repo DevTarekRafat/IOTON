@@ -1,3 +1,76 @@
+/*Font Section*/
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 150%;
+  /* or 96px */
+  letter-spacing: -0.015em;
+  /* Black Blue */
+  color: #05060A;
+  }
+
+h2 {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 35.2358px;
+line-height: 150%;
+/* or 53px */
+
+text-align: center;
+letter-spacing: 0.005em;
+text-transform: capitalize;
+
+color: #0E314C;
+  }
+
+p,span {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+letter-spacing: -0.005em;
+color: rgba(14, 49, 76, 0.9);
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.4884px;
+  line-height: 150%;
+  /* or 32px */
+  color: #0E314C;
+  }
+
+h5 {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20.2962px;
+line-height: 150%;
+/* or 30px */
+color: #071C4D;
+}
+
+h6 {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 29.9602px;
+line-height: 150%;
+/* or 45px */
+
+letter-spacing: 0.32301px;
+
+color: #14213D;
+}
+
+
 .hero-section {
   display: flex;
   justify-content: center;
@@ -28,6 +101,13 @@
   box-shadow: 0px 13px 27px var(--btn-color);
   border-radius: 40px;
   align-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.9968px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  letter-spacing: 0.02em;
 }
 .arrow {
   /* arrow svg */
@@ -165,11 +245,54 @@ ol.services-list {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-.card-icons {
-  display: flex;
   gap: 0.5rem;
+  justify-content: left;
+
+}
+
+.card-icons {
+  display: inline;
+  gap: 0rem;
+}
+.card {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .5s ease 0s;
+  border-radius: 21px;
+}
+.front{
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  color: white;
+  background: rgba(227, 240, 255, 0.15);
+/* NEW */
+
+border: 0.697346px solid #D8D8D8;
+border-radius: 20.5116px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: rgba(91, 106, 251, 0.9);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 1rem;
+}
+.white {
+  color: white;
+  font-family: "Meutas";
+  font-size: 14px;
 }
 
 .signup-content {

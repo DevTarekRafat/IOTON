@@ -1,6 +1,6 @@
 .blog {
   border-radius: var(--card-radius) var(--card-radius) 0 0;
-  padding: 1rem;
+  padding: 0;
   background: #F7FAFD;
   display: flex;
   flex-direction: column;
@@ -13,4 +13,5 @@
   overflow: hidden;
   padding: 0;
   margin: auto;
+  box-sizing: border-box;
 }

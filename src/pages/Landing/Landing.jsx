@@ -652,23 +652,21 @@ const Landing = () => {
             {team.map(({ name, src, title, linkedIn, preview }) => (
               <div className="col-lg-3 col-md-6 col-12 mb-2" key={name}>
                 <div className="card">
+                  <div className="front">
                   <img src={src} className="card-img-top" alt="..." />
-                  <div className="card-body team-card">
+                  </div>
+                    <div className="back">
+                      <div className="white">
+                        {preview}
+                        </div>
+                    </div>
                     <h3>{name}</h3>
                     <span>{title}</span>
-                    <div className="card-icons">
                       {/* <Facebook /> */}
                       {/* <Twitter /> */}
-                      <Linkedin />
                       {/* <Gitlab /> */}
                     </div>
-                    <p className="text-center">
-                      Risus commodo viverra maecenas accumsan lacus vel
-                      facilisis quis ipsum.
-                    </p>
                   </div>
-                </div>
-              </div>
             ))}
           </div>
         </div>

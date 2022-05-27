@@ -12,8 +12,11 @@ import Privacy from "./pages/Privacy/Privacy";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import Team from "./pages/Team/Team";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
+import BlogList from "./pages/BlogList/BlogList";
+
 import Anemothon from "./pages/Anemoton/Anemoton"
 import {hotjar} from 'react-hotjar';
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,9 +38,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/blogs" element={<BlogList />} />
         <Route path="/blogs/:src" element={<BlogDetails />} />
         <Route path="/thermoton" element={<Thermoton />} />
-        <Route path="/anemothon" element={<Anemothon/>} />
+        <Route path="/anemoton" element={<Anemothon/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
