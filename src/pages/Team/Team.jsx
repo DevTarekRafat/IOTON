@@ -103,7 +103,7 @@ const Team = () => {
                     <div className="form-group">
                       <input
                         type="file"
-                        class="custom-file-input"
+                        className="custom-file-input"
                       />
                     </div>
                   </div>

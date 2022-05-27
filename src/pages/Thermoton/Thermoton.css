@@ -31,6 +31,10 @@
   background-image: url(../../icons/waves.png);
   background-size: cover;
 }
+.waves2 {
+  background-image: url(../../icons/waves2.svg);
+  background-size: cover;
+}
 .fc-center {
   display: flex;
   flex-direction: column;

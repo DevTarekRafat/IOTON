@@ -46,13 +46,13 @@ const Anemoton = () => {
     }
   };
     return (
-      <section class="comingsoon">
-      <div class="comingsoon-content">
-        <div class="container">
-          <div class="row mb-5">
+      <section className="comingsoon">
+      <div className="comingsoon-content">
+        <div className="container">
+          <div className="row mb-5">
           <p id="content">Coming Soon</p>
-            <section class="container">
-              <div class="row mb-5"> 
+            <section className="container">
+              <div className="row mb-5">
               <p id="description">We’re currently working on different projects and this area of the website is under constructions. Follow us on our social media platforms to get first hand news and updates on exciting projects coming up.</p>               
               </div>
               </section>

@@ -279,7 +279,9 @@ const Thermoton = () => {
         </div>
         <br />
         <br />
-        <div className="row">
+        {/*STARTS HERE SECOND SECTION*/}
+        <div className="waves2">
+          <div className="row">
           <div className="col-md-6">
             <h3>Staff Shift/Rota management</h3>
             <br />
@@ -293,75 +295,102 @@ const Thermoton = () => {
               to external calendars such as Ios Calendar, Outlook, Google.
             </p>
           </div>
-          <div className="col-md-6"></div>
-          <div className="col-md-6"></div>
-
-          <div className="col-md-6">
-            <div>
-              <h3>Staff Training environment</h3>
-              <br />
-              <p>
-                In this Section Managers will be able to assign trainings to be
-                completed within our integrated platform.
-              </p>
-              {/* <ol className="services-list">
-                <div className="row">
-                  {trainings.map((service, idx) => (
-                    <CircledIcon
-                      {...service}
-                      idx={idx}
-                      key={idx}
-                      col="col-12"
-                    />
-                  ))}
-                </div>
-              </ol> */}
-            </div>
-          </div>
           <div className="col-md-6">
             <div className="fc-center">
-              <h3>Chat feature</h3>
-              <p>
-                This feature offers the businesses to have private one to one
-                chats, team or full stall chat environments within our platform
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="fc-center">
-              <img src="./imgs/chat.png" alt="" className="img-fluid" />
-            </div>
-          </div>
-          <div className="col-md-6"></div>
-          <div className="col-md-6">
-            <div>
-              <h3>Staff Clock in/ Clock out system</h3>
-              <p>
-                Clock in /clock out - employees are able to start and end their
-                shifts and breaks using their own iOS or Android device or using
-                another central device that’s on the site.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="fc-center">
-              <img src="./imgs/cloud.png" alt="" className="img-fluid" />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="fc-center">
-              <h3>Cloud Storage</h3>
-              <div className="separator"></div>
-              <br />
-              <p>
-                This feature offers managers to store their important documents
-                in physical and digital form such as Pest control certificate,
-              </p>
-            </div>
+                <img src="./imgs/time_management.png" alt="" className="img-fluid" />
+              </div>
           </div>
         </div>
-        <br />
-        <br />
+          <br />
+          <br />
+          <div className="row">
+            <div className="col-md-6">
+              <div className="fc-center">
+                  <img src="./imgs/staff_training.png" alt="" className="img-fluid" />
+                </div>
+            </div>
+            <div className="col-md-6">
+              <div>
+                <h3>Staff Training environment</h3>
+                <br />
+                <p>
+                  In this Section Managers will be able to assign trainings to be
+                  completed within our integrated platform.
+                </p>
+                {/* <ol className="services-list">
+                  <div className="row">
+                    {trainings.map((service, idx) => (
+                      <CircledIcon
+                        {...service}
+                        idx={idx}
+                        key={idx}
+                        col="col-12"
+                      />
+                    ))}
+                  </div>
+                </ol> */}
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="row">
+            <div className="col-md-6">
+              <div className="fc-center">
+                <h3>Chat feature</h3>
+                <p>
+                  This feature offers the businesses to have private one to one
+                  chats, team or full stall chat environments within our platform
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="fc-center">
+                <img src="./imgs/chat.png" alt="" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="row">
+            <div className="col-md-6">
+              <div className="fc-center">
+                  <img src="./imgs/clock_in_out.png" alt="" className="img-fluid" />
+                </div>
+            </div>
+            <div className="col-md-6">
+              <div>
+                <h3>Staff Clock in/ Clock out system</h3>
+                <p>
+                  Clock in /clock out - employees are able to start and end their
+                  shifts and breaks using their own iOS or Android device or using
+                  another central device that’s on the site.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <br />
+          <div className="row">
+              <div className="col-md-6">
+                <div className="fc-center">
+                  <h3>Cloud Storage</h3>
+                  <div className="separator"></div>
+                  <br />
+                  <p>
+                    This feature offers managers to store their important documents
+                    in physical and digital form such as Pest control certificate,
+                  </p>
+                </div>
+              </div>
+               <div className="col-md-6">
+                <div className="fc-center">
+                  <img src="./imgs/cloud.png" alt="" className="img-fluid" />
+                </div>
+               </div>
+          </div>
+          <br />
+          <br />
+        </div>
         <div className="text-center">
           <h3>
             Themoton- All it takes to run a successful catering business without
@@ -372,7 +401,7 @@ const Thermoton = () => {
 
         <div className="specification">
           <h4>Specification</h4>
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">Basic Information</th>
@@ -410,7 +439,7 @@ const Thermoton = () => {
             </tbody>
           </table>
 
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">Power Source</th>
@@ -424,7 +453,7 @@ const Thermoton = () => {
             </tbody>
           </table>
 
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">Network & Wireless Connectivity</th>
@@ -456,7 +485,7 @@ const Thermoton = () => {
             </tbody>
           </table>
 
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">Other Specification</th>
