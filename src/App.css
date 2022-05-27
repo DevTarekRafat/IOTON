@@ -39,11 +39,11 @@
 }
 :root {
   --blue: #4a6f8a;
-  --light-blue: #d6e8fe;
+  --light-blue: #D6E8FE;
   --light-blue-bg: rgba(70, 152, 251, 0.2);
   --dark-blue: #0e314c;
-  --gray: #5d616f;
-  --black: #05060a;
+  --gray:#5D616F;
+  --black:#05060A;
   --btn-color: #547bf9;
   --btn-radius: 40px;
   --h1-font: 40px;

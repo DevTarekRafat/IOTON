@@ -401,6 +401,34 @@ const Landing = () => {
         </section>
       </section>
 
+      {/* partners-section */}
+      {/* <section className="partners-section">
+        <div className="container">
+          <div className="partners-header">
+            <h2>Our Partners</h2>
+            <div className="separator"></div>
+          </div>
+          <br />
+          <br />
+          <div className="partner-carousel">
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={10}
+              slidesPerView={4}
+              breakpoints={breakPoints}
+              navigation
+              loop
+            >
+              {items.map(item => (
+                <SwiperSlide key={item.name}>
+                  <Partner name={item.name} src={item.src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section> */}
+
       {/* features-section */}
       <section
         className="features-section"
