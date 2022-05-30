@@ -13,6 +13,8 @@ import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import Team from "./pages/Team/Team";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import BlogList from "./pages/BlogList/BlogList";
+import Pricing from "./pages/Pricing/Pricing";
+
 
 import Anemothon from "./pages/Anemoton/Anemoton"
 import {hotjar} from 'react-hotjar';
@@ -29,6 +31,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route index element={<Landing />} />
@@ -42,6 +45,7 @@ function App() {
         <Route path="/blogs/:src" element={<BlogDetails />} />
         <Route path="/thermoton" element={<Thermoton />} />
         <Route path="/anemoton" element={<Anemothon/>} />
+        <Route path="/pricing" element={<Pricing/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

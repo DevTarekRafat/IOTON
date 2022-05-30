@@ -13,7 +13,7 @@ export const FeatureItem = ({ imgSrc, imgName, title, description }) => {
           <h5>{title}</h5>
 
           <p>{description}</p>
-          <a className="pointer">Read More</a>
+          {/*<a className="pointer">Read More</a>*/}
         </div>
       </div>
     </div>

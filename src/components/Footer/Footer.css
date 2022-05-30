@@ -10,3 +10,10 @@ footer .footer-link {
   gap: 0.5rem;
   padding: 1rem 0;
 }
+
+.footer-txt{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.2866px;
+}

@@ -29,3 +29,8 @@
 .ux-section{
     padding: 2rem 0;
 }
+
+.card{
+    background-color: unset;
+    border: none;
+}

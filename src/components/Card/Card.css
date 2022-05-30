@@ -15,3 +15,15 @@
   margin: auto;
   box-sizing: border-box;
 }
+
+.btn-format {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 13.9833px;
+line-height: 150%;
+/* or 21px */
+
+
+color: #0E314C;
+}
