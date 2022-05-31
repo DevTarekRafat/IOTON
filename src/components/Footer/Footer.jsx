@@ -39,17 +39,17 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#!" className="footer-link">
+                <a href="/thermoton" className="footer-link">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#!" className="footer-link">
+                <a href="/pricing" className="footer-link">
                   Our Pricing
                 </a>
               </li>
               <li>
-                <a href="#!" className="footer-link">
+                <a href="/blogs" className="footer-link">
                   Latest News
                 </a>
               </li>
@@ -61,11 +61,11 @@ export const Footer = () => {
             <br />
 
             <ul className="list-unstyled">
-              <li>
+              {/* <li>
                 <a href="#!" className="footer-link">
                   FAQ's
                 </a>
-              </li>
+              </li> */}
               <li>
                 <Link to="/Privacy"className="footer-link">
                   Privacy Policy
@@ -115,9 +115,12 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center p-3">
-        © 2022 Copyright:
-        <Link to="/" className="footer-link">IOTON</Link>
+      <div className="text-center p-3 footer-txt">
+        Copyright © 2022 IOTON ('14043454') trading as
+        '<Link to="/" className="footer-link">IOTON</Link>'. <br/>
+        All Rights Reserved by <Link to="/" className="footer-link">IOTON</Link>. All trademarks and
+        registered trademarks are the property of their
+        respective owners.
       </div>
     </footer>
   );

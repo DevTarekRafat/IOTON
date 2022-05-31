@@ -38,20 +38,22 @@ export const team = [
     src: "imgs/founder.png",
     linkedIn: "",
     preview:
-      "Tareq has passion for developing technology-based solutions that deliver real improvements to business, the environment and quality of life",
+      "Tareq has passion for developing technology-based solutions that deliver real" +
+        " improvements to business, the environment and quality of life",
   },
   {
     name: "Amaia",
     title: "Content Manager",
-    src: "imgs/card-img.png",
+    src: "imgs/amaia.jpeg",
     linkedIn: "",
     preview:
-      "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
+      "Amaia is a Marketing and Advertising graduate. Passionate about communication, " +
+        "she is the content manager handling social media platforms and the blog.",
   },
   {
     name: "Matteo",
     title: "Senior Front-End Developer",
-    src: "imgs/card-img.png",
+    src: "imgs/metteo.jpg",
     linkedIn: "",
     preview:
       "Cybersecurity Student, passion for IoT systems and security flaws. ",
@@ -119,7 +121,7 @@ export const cards = [
       },
       {
         title: "Evolution of IoT",
-        description: `IoT devices generated roughly 18 zettabytes of data in 2019, and the IDC predicts that figure to more than triple to over 73 zettabytes – which is equal to 73 trillion gigabytes – by 2025. Although we can't truly define digital data in physical terms, we can claim that if all of that data was transformed into 1990s discs and spread out end to end, it could travel to the moon and back over 5000 times. A precise combination of technologies required to come together and progress concurrently for IoT to evolve.
+        description: `IoT devices generated roughly 18 zetta-bytes of data in 2019, and the IDC predicts that figure to more than triple to over 73 zettabytes – which is equal to 73 trillion gigabytes – by 2025. Although we can't truly define digital data in physical terms, we can claim that if all of that data was transformed into 1990s discs and spread out end to end, it could travel to the moon and back over 5000 times. A precise combination of technologies required to come together and progress concurrently for IoT to evolve.
   
           This massive increase in IoT data volume could not have occurred without adequate Internet and cloud connection to deliver and receive it. Many IoT devices now rely on a local Wi-Fi network to send sophisticated and large amounts of data. However, as 5G and other cellular networks develop, a recent McKinsey report discusses the implications and how it may untether IoT devices from Wi-Fi networks.
           
@@ -140,7 +142,7 @@ export const cards = [
     ],
   },
   {
-    title: "The Importamce of IOT in industry",
+    title: "The Importance of IOT in industry",
     summary:
       "       The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator. These gadgets may gather and send data via the Internet, adding to the huge universe of data. Intelligent communication is transforming our reality as well as the competitive dynamics in business. For example, you might use creative communication in the form of an online store coupled with the WooCommerce variable pricing plugin to offer a knowledge of the cost per product variable. To demonstrate the rapid rise of IoT and its influence on our lives and companies, we have selected the 10 most astounding IoT facts to demonstrate that they exist and will continue.",
     owner: "Amaia",
@@ -245,7 +247,12 @@ const Landing = () => {
 
       fetch("https://api.ioton.io/api/v1/subscribers/", requestOptions)
         .then(res => {
-          console.log(res);
+            if (res.status == 505){
+                    alert("You're already subscribed :)");
+                }
+                else {
+                    alert('There was an error!');
+                }
         })
         .catch(err => {
           console.error(err);
@@ -287,7 +294,7 @@ const Landing = () => {
       imgSrc: "imgs/feature5.png",
       title: "Industrial",
       description:
-        "Lorem ipsum eiusmod dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "Providing solutions for industrial automation to improve manufacturing operations, such as factory machinery and fulfilment centres.",
       imgName: "feature5",
     },
     {
@@ -304,62 +311,71 @@ const Landing = () => {
       title: "Swarm Operations",
       src: "imgs/swarm.png",
       description:
-        "Ioton have constructed a team of specialists, that are working in a micro-UAV’s technology, to construct 3D shapes in the open-air.",
+        "Ioton has gathered a team of specialists, that are working in a micro-UAV technology, to construct 3D shapes in the open air.",
     },
     {
       title: "Next Generation Ananometer",
       src: "imgs/ananometer.png",
       description:
-        "Ioton is currently working in a next generation cutting adge technology of Anemometers, called by us Anemoton.",
+        "We are currently working on the next-generation cutting edge technology of Anemometers, called Anemoton.",
     },
     {
       title: "Smart Traffic Light Control",
       src: "imgs/control.png",
       description:
-        "Managment of modern traffic lights using AI algorithms and Computer Vision.",
+        "Management of modern traffic lights using AI algorithms and Computer Vision.",
     },
     {
       title: "Food Safety CMS",
       src: "imgs/food_safety.png",
       description:
-        "Ioton is currently working in a next tgeneration cutting adge technology of Anemometers, called by us Anemoton.",
+        "Our CMS gathers data from our Themoton, which provides temperature reading monitoring solutions," +
+          " by automating manual temperature checks required by the FSA.",
     },
   ];
   const services = [
     {
       name: "High Security / GDPR",
       description:
-        "Data security and privacy is our number one priority when using our latest platform or IoT solutions. We comply with both current UK Data Protection laws, all major industry standards and upcoming changes to GDPR.",
+        "Data security and privacy are our number one priority when using our latest platform or IoT solutions. " +
+          "We comply with both current UK Data Protection laws, all major industry standards and upcoming changes to GDPR.",
       icon: <ServiceIcon />,
     },
     {
       name: "Integratable",
       description:
-        "Through our API our application can seamlessly integrate with any platforms of you choice such Google, Amazon, Slack, SMS or reporting frameworks and our alerting system. This will give our clients full control of their data at anytime, everywhere. ",
+        "Through our API our application can seamlessly integrate with any platforms of choice " +
+          "such as Google, Amazon, Slack, SMS or reporting frameworks and our alerting system. " +
+          "This will give our clients full control of their data at any time, everywhere. ",
       icon: <IntegrableIcon />,
     },
     {
       name: "Cost Effective",
       description:
-        "At a competitive price, compared to the similar existing products in the industry, IOTON offers cost effective products without compromising quality or efficiency.",
+        "At a competitive price, compared to the similar existing products in the industry," +
+          " IOTON offers cost-effective products without compromising quality or efficiency.",
       icon: <DollarIcon />,
     },
     {
       name: "Customizable",
       description:
-        "Our products are fully customizable for our clients needs and specific requirements. Using the latest technology we adapt to different environments. ",
+        "Our products are fully customizable for our clients' " +
+          "needs and specific requirements. Using the latest technology " +
+          "we adapt to different environments. ",
       icon: <CustomizableIcon />,
     },
     {
       name: "Convenient",
       description:
-        "At IOTON, we work to make our clinets live more efficient. By using a modern user interface we are able to provide all in one solutions. ",
+        "At IOTON, we work to make our clients' lives more efficient. " +
+          "By using a modern user interface we are able to provide all in one solution.",
       icon: <ConvenientIcon />,
     },
     {
       name: "Sustainable ",
       description:
-        "At IOTON, we work to make our clinets live more efficient. By using a modern user interface we are able to provide all in one solutions.",
+        "By using sustainable materials, and offering new and effective systems like SoC," +
+          " we strive for change, having sustainability at the top of our priorities. ",
       icon: <HeartIcon />,
     },
   ];
@@ -373,9 +389,10 @@ const Landing = () => {
               <div className="col-md-6 col-12">
                 <div className="hero-content">
                   <span className="internet-txt">Internet of Things</span>
-                  <h1>
+                  <h1 className="land">
                     Save, Advance,
                     <br /> Succeed with us!
+                    <br/>
                   </h1>
                   <p>
                     We create highly-sophisticated software{" "}
@@ -386,8 +403,10 @@ const Landing = () => {
                     dashboards.
                   </p>
                   <div>
+                  <a href="/thermoton">
                     <button className="custom-btn arrow">Learn More
                     </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -437,7 +456,7 @@ const Landing = () => {
         <div className="container">
           <div className="features-content">
             <div className="partners-header">
-              <h2>Featured Services We Provide</h2>
+              <h2 className="land">Featured Services We Provide</h2>
               <p>We offer a wide variety of products and services,</p>
               <div className="separator" style={{ width: "20%" }}></div>
               <br />
@@ -457,7 +476,7 @@ const Landing = () => {
       <section className="cms-section" ref={ref => (cmsSection = ref)}>
         <div className="light-blue-bg pt-3 pb-3">
           <div className="partners-header">
-            <h2>Our powerful CMS</h2>
+            <h2 className="land">Our powerful CMS</h2>
             <div className="separator"></div>
           </div>
           <br />
@@ -466,7 +485,6 @@ const Landing = () => {
             <div className="row">
               <div className="col-md-6 col-12">
                 <div id="coldRoom" className="mb-5 ">
-                  <img src="imgs/cold-room.png" alt="" className="img-fluid" />
                   <img
                     src="./imgs/cold-room.svg"
                     alt=""
@@ -477,33 +495,31 @@ const Landing = () => {
 
               <div className="col-md-6 col-12">
                 <div className="f-center h-100 mb-5">
-                  <div className="bg-white p-3">
-                    <h2>Web - IOS - Android Connectet</h2>
+                  <div className="p-3">
+                    <h2 className="land">Thermoton</h2>
                     <p>
-                      Our Thermoton device is connected to a CMS that can be easily
-                      accessed from any device, from IOS to Android, which is displayed
-                      through an application data visualisation for easier understanding
-                      and data reading. The collected records are captured in the cloud,
-                      which can be accessed very conveniently, anywhere at any time.
-                      When the device collects data and reaches the pre-set temperature
-                      limit, the user will get a notification via email, SMS, or phone
-                      notification.                    </p>
+                      We created the Thermoton, a smart device that offers a temperature
+                      recording solution. This gadget provides conveniency and accessibility
+                      by automating manual temperature checks. This system automatically
+                      recognizes the temperature of the area and uploads the data to the cloud,
+                      making the information accessible from anywhere at any time.</p>
+
                   </div>
                 </div>
               </div>
 
               <div className="col-md-6 col-12">
                 <div className=" mb-5">
-                  <div className="bg-white p-3">
-                    <h2>Thermoton</h2>
+                  <div className="p-3">
+                    <h2 className="land">Web - IOS - Android Connectet</h2>
                     <p>
-                      Our Thermoton device is connected to a CMS that can be easily
-                      accessed from any device,  IOS to Android, which is displayed through
-                      an application data visualisation for easier understanding and data
-                      reading. The collected records are captured in the cloud which can
-                      be accessed very conveniently, anywhere at any time.
-                      When the device collects data reaching the pre-set temperature limit,
-                      the user will get a notification via email, SMS or phone notification.
+                       Our Thermoton device is connected to a CMS that can be easily accessed
+                      from any device,  IOS to Android, which is displayed through an application
+                      data visualisation for easier understanding and data reading.
+                      The collected records are captured in the cloud which can be accessed
+                      very conveniently, anywhere at any time. When the device collects data
+                      reaching the pre-set temperature limit, the user will get a notification via email,
+                      SMS or phone notification.
                     </p>
                     <a href="/thermoton">
                     <button className="custom-btn">explore more</button>
@@ -528,7 +544,7 @@ const Landing = () => {
           <div className="row justify-content-center">
             <div className="col-md-6 col-12">
               <div className="partners-header text-center">
-                <h2>Explore Our Use Cases</h2>
+                <h2 className="land">Explore Our Use Cases</h2>
                 <div className="separator"></div>
                 <br />
                 <LightHouse />
@@ -562,18 +578,18 @@ const Landing = () => {
               <div className="col-md-6 col-12">
                 <div className="h-100 f-center">
                   <div className="contact-content">
-                    <h2>Talk to us about your idea! </h2>
+                    <h2 className="land">Talk to us about your idea! </h2>
                     <br />
                     <p className="find-out-txt">
-                      To find out more about IOTON, or to discuss how we may be
-                      of service to you, please get in touch.
+                      To find out more about IOTON or to discuss how we help your business, get in touch with us.
                     </p>
                     <p>
-                      Unlock the potential of pioneering IoT technology for your
-                      business.
+                      Unlock the potential of pioneering IoT technology for your business.
                     </p>
                     <div>
-                      <button className="custom-btn">Contact Us</button>
+                      <Link to="/contact">
+                        <button className="custom-btn" >Contact Us</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -589,7 +605,7 @@ const Landing = () => {
         ref={ref => (comparisonSection = ref)}
       >
         <div className="partners-header">
-          <h2>Why IOTON?</h2>
+          <h2 className="land">Why IOTON?</h2>
           <p>
             Aiming towards accessible, fast and intelligent services IOTON
             garantees the following commodities
@@ -614,7 +630,7 @@ const Landing = () => {
         <div className="light-blue-bg pt-3 pb-3">
           <div className="container">
             <div className="partners-header">
-              <h2>Discover More</h2>
+              <h2 className="land">Discover More</h2>
               <div className="separator"></div>
               <br />
               <p>
@@ -624,11 +640,16 @@ const Landing = () => {
             </div>
             <br />
             <br />
-            <div className="row">
+            {/* <div className="row">
               {cards.map(card => {
                 return <Card {...card} key={card.title} />;
               })}
-            </div>
+            </div> */}
+              <div className="row" >
+                <Card date={"March 15, 2022"}  title={"Welcome To IOTON"} owner={"Amaia"} src={"imgs/industry.png"} params={"Welcome to IOTON, an innovative tech start-app that automates existing procedures through technology solutions, starting from the catering industry, medical, road traffic control..."} linkto={"industry"}/>
+                {/*<Card date={"March 15, 2022"}  title={"What is the Internet of things?"} owner={"Amaia"} src={"imgs/IOT.png"} params={"IoT, also known as internet of things, is the connectivity of computing devices incorporated in ordinary things through the Internet so that they may transmit and receive data..."} linkto={"IOT"}/>*/}
+                {/*<Card date={"March 15, 2022"}  title={"The Importace of IOT in industryi"} owner={"Amaia"} src={"imgs/electric.png"} params={"The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator..."} linkto={"electric"}/>*/}
+              </div>
           </div>
         </div>
       </section>
@@ -637,13 +658,13 @@ const Landing = () => {
       <section className="team-section" ref={ref => (teamSection = ref)}>
         <div className="container">
           <div className="partners-header">
-            <h2>Our Awesome Team</h2>
+            <h2 className="land">Our Awesome Team</h2>
             <div className="separator"></div>
             <br />
             <p>
               We celebrate our successes and look forward to new opportunities.
               Collaboration is key challenges and having fun at the same time,
-              we’re built upon this way.{" "}
+              we’re built upon this way.  {" "}
             </p>
           </div>
           <br />
@@ -742,7 +763,7 @@ const ExploreCard = ({ title, src, description }) => (
           <div>
             <h5>{title}</h5>
             <p>{description}</p>
-            <span>View Details</span>
+            {/*<span>View Details</span>*/}
           </div>
         </div>
       </div>

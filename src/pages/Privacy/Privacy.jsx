@@ -191,7 +191,7 @@ const Privacy = () => {
             </p>
             <br />
             <p>
-              Cookies or Browser Cookies: A cookie is a small file placed on
+              <strong>Cookies or Browser Cookies:</strong> A cookie is a small file placed on
               Your Device. You can instruct Your browser to refuse all Cookies
               or to indicate when a Cookie is being sent. However, if You do not
               accept Cookies, You may not be able to use some parts of our
@@ -199,7 +199,7 @@ const Privacy = () => {
               will refuse Cookies, our Service may use Cookies.
             </p>
             <p>
-              Flash Cookies: Certain features of our Service may use local
+              <strong>Flash Cookies:</strong> Certain features of our Service may use local
               stored objects (or Flash Cookies) to collect and store information
               about Your preferences or Your activity on our Service. Flash
               Cookies are not managed by the same browser settings as those used
@@ -226,18 +226,20 @@ const Privacy = () => {
             </p>
             <br />
             <p>
+              <strong>
               We use both Session and Persistent Cookies for the purposes set
               out below:
+              </strong>
             </p>
             <br />
             <p>Necessary / Essential Cookies</p>
             <br />
-            <p>Type: Session Cookies</p>
+            <p><strong>Type:</strong> Session Cookies</p>
             <br />
-            <p>Administered by: Us</p>
+            <p><strong>Administered by:</strong> Us</p>
             <br />
             <p>
-              Purpose: These Cookies are essential to provide You with services
+              <strong>Purpose:</strong> These Cookies are essential to provide You with services
               available through the Website and to enable You to use some of its
               features. They help to authenticate users and prevent fraudulent
               use of user accounts. Without these Cookies, the services that You
@@ -247,23 +249,23 @@ const Privacy = () => {
             <br />
             <p>Cookies Policy / Notice Acceptance Cookies</p>
             <br />
-            <p>Type: Persistent Cookies</p>
+            <p><strong>Type:</strong> Persistent Cookies</p>
             <br />
-            <p>Administered by: Us</p>
+            <p><strong>Administered by:</strong> Us</p>
             <br />
             <p>
-              Purpose: These Cookies identify if users have accepted the use of
+              <strong>Purpose:</strong> These Cookies identify if users have accepted the use of
               cookies on the Website.
             </p>
             <br />
             <p>Functionality Cookies</p>
             <br />
-            <p>Type: Persistent Cookies</p>
+            <p><strong>Type:</strong> Persistent Cookies</p>
             <br />
-            <p>Administered by: Us</p>
+            <p><strong>Administered by:</strong> Us</p>
             <br />
             <p>
-              Purpose: These Cookies allow us to remember choices You make when
+              <strong>Purpose:</strong> These Cookies allow us to remember choices You make when
               You use the Website, such as remembering your login details or
               language preference. The purpose of these Cookies is to provide
               You with a more personal experience and to avoid You having to
@@ -286,21 +288,21 @@ const Privacy = () => {
             </p>
             <br />
             <p>
-              To manage Your Account: to manage Your registration as a user of
+              <strong>To manage Your Account:</strong> to manage Your registration as a user of
               the Service. The Personal Data You provide can give You access to
               different functionalities of the Service that are available to You
               as a registered user.
             </p>
             <br />
             <p>
-              For the performance of a contract: the development, compliance and
+              <strong>For the performance of a contract:</strong> the development, compliance and
               undertaking of the purchase contract for the products, items or
               services You have purchased or of any other contract with Us
               through the Service.
             </p>
             <br />
             <p>
-              For the performance of a contract: the development, compliance and
+              <strong>For the performance of a contract:</strong> the development, compliance and
               undertaking of the purchase contract for the products, items or
               services You have purchased or of any other contract with Us
               through the Service.
@@ -314,11 +316,11 @@ const Privacy = () => {
             </p>
             <br />
             <p>
-              To manage Your requests: To attend and manage Your requests to Us.
+              <strong>To manage Your requests:</strong> To attend and manage Your requests to Us.
             </p>
             <br />
             <p>
-              For business transfers: We may use Your information to evaluate or
+              <strong>For business transfers:</strong> We may use Your information to evaluate or
               conduct a merger, divestiture, restructuring, reorganization,
               dissolution, or other sale or transfer of some or all of Our
               assets, whether as a going concern or as part of bankruptcy,
@@ -327,7 +329,7 @@ const Privacy = () => {
             </p>
             <br />
             <p>
-              For other purposes: We may use Your information for other
+              <strong>For other purposes:</strong> We may use Your information for other
               purposes, such as data analysis, identifying usage trends,
               determining the effectiveness of our promotional campaigns and to
               evaluate and improve our Service, products, services, marketing
@@ -335,23 +337,25 @@ const Privacy = () => {
             </p>
             <br />
             <p>
-              We may share Your personal information in the following
-              situations:
+              <strong>We may share Your personal information in the following
+              situations:</strong>
             </p>
             <br />
             <p>
-              With Service Providers: We may share Your personal information
+              <strong>With Service Providers:</strong> We may share Your personal information
               with Service Providers to monitor and analyze the use of our
               Service, to contact You.
             </p>
             <p>
-              For business transfers: We may share or transfer Your personal
+              <strong>For business transfers:</strong>
+              We may share or transfer Your personal
               information in connection with, or during negotiations of, any
               merger, sale of Company assets, financing, or acquisition of all
               or a portion of Our business to another company.
             </p>
             <p>
-              With Affiliates: We may share Your information with Our
+              <strong>With Affiliates:</strong>
+               We may share Your information with Our
               affiliates, in which case we will require those affiliates to
               honor this Privacy Policy. Affiliates include Our parent company
               and any other subsidiaries, joint venture partners or other
@@ -359,18 +363,20 @@ const Privacy = () => {
               Us.
             </p>
             <p>
-              With business partners: We may share Your information with Our
+              <strong>With business partners:</strong>
+              We may share Your information with Our
               business partners to offer You certain products, services or
               promotions.
             </p>
             <p>
-              With other users: when You share personal information or otherwise
+              <strong>With other users:</strong>
+              when You share personal information or otherwise
               interact in the public areas with other users, such information
               may be viewed by all users and may be publicly distributed
               outside.
             </p>
             <p>
-              With Your consent: We may disclose Your personal information for
+              <strong>With Your consent:</strong> We may disclose Your personal information for
               any other purpose with Your consent.
             </p>
             <p>Retention of Your Personal Data</p>
@@ -519,10 +525,10 @@ const Privacy = () => {
               contact us:
             </p>
             <br />
-            <p>By email: hello@ioton.io</p>
+            <p><strong>By email:</strong> hello@ioton.io</p>
             <br />
             <p>
-              By mail: Kemp House, 160 City Road, London, United Kingdom, EC1V
+            <strong>By mail:</strong> Kemp House, 160 City Road, London, United Kingdom, EC1V
               2NX
             </p>
             <br />

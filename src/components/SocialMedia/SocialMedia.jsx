@@ -9,16 +9,16 @@ import "./SocialMedia.css";
 const SocialMedia = () => {
   return (
     <div className="fg-between">
-      <a className="social-media-container" href="#">
+      <a className="social-media-container" href="https://instagram.com/ioton.io">
         <Instagram />
       </a>
-      <a className="social-media-container" href="#">
+      <a className="social-media-container" href="https://www.facebook.com/ioton.io.uk/">
         <Facebook />
       </a>
-      <a className="social-media-container" href="#">
+      <a className="social-media-container" href="https://twitter.com/ioton_io">
         <Twitter />
       </a>
-      <a className="social-media-container" href="#">
+      <a className="social-media-container" href="https://www.linkedin.com/company/iotonio/">
         <Linkedin />
       </a>
     </div>

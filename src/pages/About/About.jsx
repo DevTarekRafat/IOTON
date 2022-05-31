@@ -6,6 +6,7 @@ import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import "./About.css";
+import { team } from "../Landing/Landing";
 
 const About = () => {
   let heroSection = useRef(null);
@@ -22,41 +23,6 @@ const About = () => {
     animSection(contactSection);
     // animSection(partnersSection);
   }, []);
-
-  const team = [
-    {
-      name: "Tareq",
-      title: "Founder-Senior Sofware Engineer",
-      src: "./imgs/founder.png",
-      linkedIn: "",
-      preview:
-        "Tareq has passion for developing technology-based solutions that deliver real improvements to business, the environment and quality of life",
-    },
-    {
-      name: "Amaia",
-      title: "Content Manager",
-      src: "./imgs/card-img.png",
-      linkedIn: "",
-      preview:
-        "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    },
-    {
-      name: "Matteo",
-      title: "Senior Front-End Developer",
-      src: "./imgs/card-img.png",
-      linkedIn: "",
-      preview:
-        "Cybersecurity Student, passion for IoT systems and security flaws. ",
-    },
-    {
-      name: "Flori",
-      title: "Senior Hardware Engineer",
-      src: "./imgs/hardware-eng.png",
-      linkedIn: "",
-      preview:
-        "Passionate on latest hardware technologies since the age of fourteen.",
-    },
-  ];
 
   return (
     <>
@@ -99,10 +65,10 @@ const About = () => {
                 <div>
                   <h3>Our History</h3>
                   <p>
-                    This project wouldn’t be able to succeed without the help of
-                    our amazing team. Slowly but surely, the team is growing,
-                    and we push one another to thrive and reach our full
-                    potential. Starting as a simple idea to help make cold room
+                    This project wouldn’t be able to succeed without the help
+                    of our amazing team. Slowly but surely, the team is growing,
+                    and we push one another to thrive and reach our full potential.
+                    Starting as a simple idea to help make cold room
                     temperature readings more efficient in the hospitality
                     industry, Tareq , founder and senior software engineer
                     started developing the “Thermoton”. Later joined by Flori,
@@ -159,9 +125,9 @@ const About = () => {
                 <div className="separator"></div>
                 <br />
                 <p>
-                  We celebrate our successes and look forward to new
-                  opportunities. Collaboration is key challenges and having fun
-                  at the same time, we’re built upon this way.{" "}
+                 We celebrate our successes and look forward to new opportunities.
+                  Collaboration is key and we believe that even when facing challenges
+                  we must still learn and have fun in the process.{" "}
                 </p>
               </div>
             </div>
@@ -171,20 +137,21 @@ const About = () => {
             {team.map(({ name, src, title, linkedIn, preview }) => (
               <div className="col-lg-3 col-md-6 col-12 mb-2" key={name}>
                 <div className="card">
+                  <div className="front">
                   <img src={src} className="card-img-top" alt="..." />
-                  <div className="card-body team-card">
+                  </div>
+                    <div className="back">
+                      <div className="white">
+                        {preview}
+                        </div>
+                    </div>
                     <h3>{name}</h3>
                     <span>{title}</span>
-                    <div className="card-icons">
-                      <Linkedin />
+                      {/* <Facebook /> */}
+                      {/* <Twitter /> */}
+                      {/* <Gitlab /> */}
                     </div>
-                    <p className="text-center">
-                      Risus commodo viverra maecenas accumsan lacus vel
-                      facilisis quis ipsum.
-                    </p>
                   </div>
-                </div>
-              </div>
             ))}
           </div>
         </div>
@@ -198,8 +165,7 @@ const About = () => {
               <div className="partners-header text-center">
                 <h2>We Always Try To Understand Users Expectation</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                By prioritising our customers' needs, we always try to keep track of all our accounts and subscribers offering a personalised customer experience.
                 </p>
                 <br />
                 <div className="separator"></div>

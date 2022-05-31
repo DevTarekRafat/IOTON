@@ -14,7 +14,8 @@ const BlogDetails = () => {
   }, []);
 
   return (
-    <div className="pt-3 pb-3">
+      <React.Fragment>
+        <div className="pt-3 pb-3">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -34,10 +35,10 @@ const BlogDetails = () => {
           blogDetails?.details.map(details => (
             <div className="row" key={details.title}>
               <div className="col-md-12">
-                <h3>{details.title}</h3>
+                <h3 className="blog">{details.title}</h3>
               </div>
               <div className="col-md-12">
-                <p>{details.description}</p>
+                <p className="blog">{details.description}</p>
               </div>
             </div>
           ))}
@@ -47,7 +48,7 @@ const BlogDetails = () => {
             <div className="row" key={item}>
               <div className="col-md-6">
                 <div className="f-center h-100">
-                  <p>{item.description}</p>
+                  <p className="blog">{item.description}</p>
                 </div>
               </div>
               <div className="col-md-6">
@@ -59,6 +60,7 @@ const BlogDetails = () => {
           ))}
       </div>
     </div>
+      </React.Fragment>
   );
 };
 

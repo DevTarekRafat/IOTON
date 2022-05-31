@@ -76,8 +76,8 @@ const Header = () => {
                           Anemoton
                         </Link>
                         <span>
-                          Management of cantering industry revolution begins
-                          with us.
+                          Smart anemometer, highly accurate meteorological readings.
+                          Perfect for industrial and personal/home use.
                         </span>
                       </li>
                       <li>
@@ -111,6 +111,10 @@ const Header = () => {
               <div className="group-btn fg-between">
                 {/* <button className="support-btn">Support</button>
                 <button className="login-btn">login</button> */}
+                <Link to="/team">
+                  <button className="login-btn">
+                  Join Team</button>
+                  </Link>
               </div>
             </div>
 
@@ -139,25 +143,31 @@ const Header = () => {
               </li>
 
               <li>
-                <Link className="nav-link text-center" to="/">
-                  Solutions
+                <Link className="nav-link text-center" to="/thermoton">
+                  Thermoton
                 </Link>
                 {/* <div className="line"></div> */}
               </li>
               <li>
-                <Link className="nav-link text-center" to="/">
+                <Link className="nav-link text-center" to="/anemoton">
+                  Anemothon
+                </Link>
+                {/* <div className="line"></div> */}
+              </li>
+              <li>
+                <Link className="nav-link text-center" to="/about">
                   About
                 </Link>
                 {/* <div className="line"></div> */}
               </li>
               <li>
-                <Link className="nav-link text-center" to="/">
+                <Link className="nav-link text-center" to="/blogs">
                   Blog
                 </Link>
                 {/* <div className="line"></div> */}
               </li>
               <li>
-                <Link className="nav-link text-center" to="/">
+                <Link className="nav-link text-center" to="/contact">
                   Contact
                 </Link>
                 {/* <div className="line"></div> */}

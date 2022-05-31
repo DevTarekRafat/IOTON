@@ -48,7 +48,8 @@ const Thermoton = () => {
     {
       name: "Assign training to employees",
       description:
-        "Our platform have already been populated with a variety of trainings that can be used and assigned to any staff for free. They can also upload their trainings in any format.",
+        "Our platform have already been populated with a variety of trainings that can be used and assigned" +
+          " to any staff for free. They can also upload their trainings in any format.",
       icon: <AssignIcon />,
     },
   ];
@@ -84,9 +85,8 @@ const Thermoton = () => {
               <div className="text-center">
                 <h2>CMS features</h2>
                 <p>
-                  All of the captured Records are stored in the cloud and can be
-                  accessed at anytime, in any form, starting from Reports to
-                  visual presentation
+                  All of the captured Records are stored in the cloud and can be accessed at anytime,<br/>
+                  in any form, starting from Reports to visual presentation
                 </p>
                 <br />
                 <h3 className="text-center">3 different accounts available.</h3>
@@ -127,16 +127,14 @@ const Thermoton = () => {
                 <h3>Food And Safety Control System</h3>
                 <h4>Temperature Records</h4>
                 <p>
-                  Through our cutting edge smart device Thermoton we provide
-                  temperature reading monitoring solutions. By automating manual
-                  temperature checks, we offer conveniency and accessibility.
-                  This device automatically measures the environment temperature
-                  and it uploads the data to the cloud making the information
-                  easy to access from anywhere at any time. Our smart device has
-                  been designed to offer a variety of solutions and adapt to
-                  different environments, ranging from large-scale industrial
-                  use to commercial standalone use. Therefore, Thermoton can
-                  adjust and monitor any environment that requires precise
+                 Through our cutting edge smart device Thermoton we provide temperature
+                  reading monitoring solutions. By automating manual temperature checks,
+                  we offer conveniency and accessibility. This device automatically measures
+                  the environment temperature and it uploads the data to the cloud making the
+                  information easy to access from anywhere at any time. Our smart device has been
+                  designed to offer a variety of solutions and adapt to different environments,
+                  ranging from large-scale industrial use to commercial standalone use. Therefore,
+                  Thermoton can adjust and monitor any environment that requires precise
                   temperature monitoring, from fridges, freezers etc.
                 </p>
               </div>
@@ -148,14 +146,13 @@ const Thermoton = () => {
           <div className="row">
             <div className="offset-md-1 col-md-10 col-12">
               <p className="text-center">
-                The Thermoton device is linked to a CMS that can be accessed
+                The Thermoton device is linked to a CMS that can be accessed
                 from any device, from iOS to Android, which is shown via an
-                application data visualisation for simpler understanding and
-                data interpretation. The collected records are saved in the
-                cloud and may be viewed from anywhere at any time. When the
-                gadget captures data that exceeds the pre-set temperature limit,
-                the user will be notified through email, SMS, or phone
-                notification. 
+                application data visualisation for simpler understanding and data
+                interpretation. The collected records are saved in the cloud and may be
+                viewed from anywhere at any time. When the gadget captures data that exceeds
+                the pre-set temperature limit, the user will be notified through email,
+                SMS, or phone notification.
               </p>
             </div>
           </div>
@@ -170,12 +167,12 @@ const Thermoton = () => {
               <div className="fc-center text-gap ">
                 <h3>HAACP/DFFS/FSA Report</h3>
                 <p>
-                  This feature offers the Mangers to create, print, edit and
-                  delete customised To-do lists or tasks that may need to be
-                  completed periodically. One of the amazing benefits of this
-                  feature is that managers can assign employees to tasks.
-                  Customised report generation including HACCP, DFSS, FSA, and
-                  more
+                  Our Company has worked closely with the FSA (Food Standard Agency),
+                  therefore, we are aware, and up to date with all the requirements.
+                  Through our CMS our clients can generate detailed reports that have
+                  been customised and adapted to meet all the FSA conditions. Our
+                  device offers detailed control of the HAACP digital reports which
+                  are securely stored in the cloud and ready for any FSA inspection.
                 </p>
               </div>
             </div>
@@ -202,15 +199,14 @@ const Thermoton = () => {
             </div>
             <div className="col-md-5">
               <div className="fc-center text-gap">
-                <h3>HAACP/DFFS/FSA Report</h3>
+                {/*<h3>HAACP/DFFS/FSA Report</h3>*/}
                 <p>
-                  Our Company have works close with the FSA (Food Standard
-                  Agency). We know in details what they request. threw our CMS u
-                  can generate detailed reports that have been customised and
-                  adapted to meet al the FSA requirements. Since all of our data
-                  are securely stored in the cloud, at no time u can have a
-                  detailed HAACP digital report (can be printed or sent by
-                  email) ready to show to the FSA inspector.
+                  This feature offers management the option to create, print,
+                  edit and delete customised To-do lists or tasks that may need
+                  to be completed periodically. Moreover, one of the benefits of
+                  this feature is the possibility to assign employees tasks very
+                  easily through our CMS. Our system also allows customised report
+                  generation including HACCP, DFSS, FSA and more.
                 </p>
               </div>
             </div>
@@ -227,11 +223,11 @@ const Thermoton = () => {
               <div className="fc-center text-gap ">
                 <h3>Incident management</h3>
                 <p>
-                  Our CMS have a designated area only to keep truck of all the
-                  incidents happening at work. The Form can be fully customised,
-                  is easy to use and work on, and all the stored records can be
-                  accessed at anytime. We provide many ready to implement
-                  templates from managers.
+                  Our CMS has a designated area only to keep track of
+                  all the incidents happening at work. The form can
+                  be fully customised, is easy to use, and all the stored
+                  records can be accessed at any time. Moreover, we
+                  provide many ready to implement templates from managers.
                 </p>
               </div>
             </div>
@@ -247,10 +243,9 @@ const Thermoton = () => {
             <div className="text-center p-5">
               <h3>Employee Management</h3>
               <p>
-                This feature offers to the managers the opportunity to manage
-                the staff or employees easier than it has ever been. this
-                because of the user friendly easy to use graphics. this feature
-                includes:
+                Through our user friendly graphics our CMS offers management the opportunity
+                to address the staff or employees easier than it has ever been. This is thanks to our
+                user-friendly easy to use graphics. This presents the following features:
               </p>
             </div>
           </div>
@@ -265,15 +260,15 @@ const Thermoton = () => {
                   <h3>Staff Shift/Rota management</h3>
                   <p>
                     This feature allows management to control and handle the
-                    rota and employee working hours. When a shift is assigned to
-                    an employee, this will send an automatic notification that
-                    there has been a shift on their schedule. Our CMS also
-                    allows staff members to send notifications or messages in
-                    case of a late show-up. Moreover, this feature allows
-                    communication from employees to management, directly on the
-                    app, in case of needing to communicate any issues or
-                    queries. The app calendar can de be exported or connected to
-                    external calendars such as IOS Calendar, Outlook or Google.
+                    rota and employee working hours. When a shift is assigned
+                    to an employee, this will send an automatic notification
+                    that there has been a shift on their schedule. Our CMS also allows
+                    staff members to send notifications or messages in case of a late
+                    show-up. Moreover, this feature allows communication from employees
+                    to management, directly on the app, in case of needing to
+                    communicate any issues or queries. The app calendar
+                    can de be exported or connected to external calendars such
+                    as IOS Calendar, Outlook or Google.
                   </p>
                 </div>
               </div>
@@ -340,9 +335,9 @@ const Thermoton = () => {
                 <div className="fc-center text-gap">
                   <h3>Chat feature</h3>
                   <p>
-                    This feature offers the businesses to have private one to
-                    one chats, team or full stall chat environments within our
-                    platform
+                    This feature offers the businesses to have private
+                    one to one chats, team or full stall chat
+                    environments within our platform.
                   </p>
                 </div>
               </div>
@@ -369,9 +364,10 @@ const Thermoton = () => {
                 <div className="fc-center text-gap">
                   <h3>Staff Clock in/ Clock out system</h3>
                   <p>
-                    Clock in /clock out - employees are able to start and end
-                    their shifts and breaks using their own iOS or Android
-                    device or using another central device that’s on the site.
+                    This feature allows employees to start and finish their
+                    shifts and breaks using their own iOS or Android
+                    device or using another central device that will be
+                    located on the site.
                   </p>
                 </div>
               </div>
@@ -385,9 +381,9 @@ const Thermoton = () => {
                   <h3>Cloud Storage</h3>
                   <div className="separator"></div>
                   <p>
-                    This feature offers managers to store their important
-                    documents in physical and digital form such as Pest control
-                    certificate,
+                   This feature offers management the option
+                    to store documents physically or digitally,
+                    such as a Pest control certificate.
                   </p>
                 </div>
               </div>
@@ -494,8 +490,8 @@ const Thermoton = () => {
 
             <table className="table">
               <thead>
-                <tr>
-                  <th scope="col">Network & Wireless Connectivity</th>
+                <tr className="table-header">
+                  <th scope="col" colSpan="2">Network & Wireless Connectivity</th>
                 </tr>
               </thead>
               <tbody>

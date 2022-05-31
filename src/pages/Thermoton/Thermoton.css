@@ -57,6 +57,25 @@
 .text-gap {
   gap: 0.5rem;
 }
+.thermoton-content > div> h2, .table-header> th{
+  color: #5B6AFB;
+}
+table>tbody>tr>td:first-child{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.7494px;
+  color: rgba(14, 49, 76, 0.65);
+}
+table>tbody>tr>td:last-child{
+ font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.7494px;
+  line-height: 150%;
+  color: #0E314C;
+
+}
 
 @media screen and (max-width: 992px) {
   .main-thermoton {
