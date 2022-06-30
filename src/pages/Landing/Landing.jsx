@@ -74,6 +74,8 @@ export const cards = [
     owner: "Amaia",
     src: "imgs/industry.png",
     params: "industry",
+    highlights: "Welcome to IOTON, an innovative tech start-app that automates existing procedures through technology solutions, starting from the catering industry, medical, road traffic control...",
+    tags: "internet of things, iot, technology, tech, ai, automation, arduino, robotic, artificial intelligence, electronics, smart home, Smart Tech, industry, Manufacturing, Industrial, Restaurants, Takeaways, modern tech",
     details: [
       {
         title: "What is IOTON?",
@@ -111,6 +113,8 @@ export const cards = [
     owner: "Amaia",
     src: "imgs/IOT.png",
     params: "IOT",
+    highlights: "IoT, also known as internet of things, is the connectivity of computing devices incorporated in ordinary things through the Internet so that they may transmit and receive data...",
+    tags: "internet of things, iot, technology, tech, ai, automation, arduino, robotic, artificial intelligence, electronics, smart home, Smart Tech, industry, Manufacturing, Industrial, Restaurants, Takeaways, modern tech",
     summary:
       "Welcome to IOTON, an innovative tech start-app that automates existing procedures through technology solutions, starting from the catering industry, medical, road traffic control, and more. We work with almost all areas of industry to provide solutions from industrial scale to personal consumers use. We achieve our objectives by using the latest technologies starting from creating integrated systems that use system on chip devices, to problem solving using computer vision and AI.",
     details: [
@@ -146,6 +150,8 @@ export const cards = [
     summary:
       "       The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator. These gadgets may gather and send data via the Internet, adding to the huge universe of data. Intelligent communication is transforming our reality as well as the competitive dynamics in business. For example, you might use creative communication in the form of an online store coupled with the WooCommerce variable pricing plugin to offer a knowledge of the cost per product variable. To demonstrate the rapid rise of IoT and its influence on our lives and companies, we have selected the 10 most astounding IoT facts to demonstrate that they exist and will continue.",
     owner: "Amaia",
+    highlights: "The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator...",
+    tags: "internet of things, iot, technology, tech, ai, automation, arduino, robotic, artificial intelligence, electronics, smart home, Smart Tech, industry, Manufacturing, Industrial, Restaurants, Takeaways, modern tech",
     src: "imgs/electric.png",
     params: "electric",
     details: [
@@ -647,8 +653,8 @@ const Landing = () => {
             </div> */}
               <div className="row" >
                 <Card date={"March 15, 2022"}  title={"Welcome To IOTON"} owner={"Amaia"} src={"imgs/industry.png"} params={"Welcome to IOTON, an innovative tech start-app that automates existing procedures through technology solutions, starting from the catering industry, medical, road traffic control..."} linkto={"industry"}/>
-                {/*<Card date={"March 15, 2022"}  title={"What is the Internet of things?"} owner={"Amaia"} src={"imgs/IOT.png"} params={"IoT, also known as internet of things, is the connectivity of computing devices incorporated in ordinary things through the Internet so that they may transmit and receive data..."} linkto={"IOT"}/>*/}
-                {/*<Card date={"March 15, 2022"}  title={"The Importace of IOT in industryi"} owner={"Amaia"} src={"imgs/electric.png"} params={"The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator..."} linkto={"electric"}/>*/}
+                <Card date={"March 15, 2022"}  title={"What is the Internet of things?"} owner={"Amaia"} src={"imgs/IOT.png"} params={"IoT, also known as internet of things, is the connectivity of computing devices incorporated in ordinary things through the Internet so that they may transmit and receive data..."} linkto={"IOT"}/>
+                <Card date={"March 15, 2022"}  title={"The Importance of IOT in industry"} owner={"Amaia"} src={"imgs/electric.png"} params={"The Internet of Things is already present and growing in popularity. IoT’s refer to Internet-connected devices such as smartwatches, Fitbit, or refrigerator..."} linkto={"electric"}/>
               </div>
           </div>
         </div>
